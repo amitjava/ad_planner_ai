@@ -5,7 +5,7 @@
 set -e  # Exit on error
 
 # Configuration
-PROJECT_ID="madhive-testing"
+PROJECT_ID="Gemini API"
 REGION="us-central1"
 SERVICE_NAME="smart-ad-planner"
 IMAGE_NAME="gcr.io/${PROJECT_ID}/${SERVICE_NAME}"

@@ -834,7 +834,7 @@ def main():
     st.markdown("""
     <div style='text-align: center; color: #666;'>
         <p>Built with ❤️ using Google ADK, Gemini 2.0 Flash, ChromaDB, and Streamlit</p>
-        <p>Smart Ad Planner • <a href='https://github.com/amitjava/ad_planner'>GitHub</a> • Kaggle AI Agents Intensive - Enterprise Category</p>
+        <p>Smart Ad Planner • <a href='https://github.com/amitjava/ad_planner_ai'>GitHub</a> • Kaggle AI Agents Intensive - Enterprise Category</p>
     </div>
     """, unsafe_allow_html=True)
 
