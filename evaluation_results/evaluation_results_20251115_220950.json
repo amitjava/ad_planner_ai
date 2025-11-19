@@ -1,0 +1,334 @@
+{
+  "evaluation_run": {
+    "timestamp": "2025-11-15T22:08:27.053606",
+    "total_tests": 1,
+    "gemini_model": "gemini-2.5-flash"
+  },
+  "test_results": [
+    {
+      "test_id": "test_001",
+      "business_name": "Joe's Coffee Shop",
+      "category": "Food & Beverage",
+      "start_time": 1763273307.053629,
+      "agents": {
+        "persona": {
+          "success": true,
+          "duration_seconds": 7.6,
+          "persona": {
+            "name": "Anya the Artisan Appreciator",
+            "age_range": "28-36",
+            "interests": [
+              "Specialty coffee brewing",
+              "Local art and design",
+              "Sustainable living",
+              "Independent businesses",
+              "Remote work culture",
+              "Discovering hidden gems",
+              "Curated playlists"
+            ],
+            "platforms": [
+              "Instagram",
+              "Yelp",
+              "Google Maps",
+              "Local SF blogs/news (e.g., SFist, Eater SF)"
+            ],
+            "creative_style": "Visually rich, authentic, and evocative. High-quality photography showcasing the craftsmanship of coffee, the unique interior design, natural light, and local art. Content should emphasize storytelling, community connection, and the unique, non-corporate vibe.",
+            "motivation": "Anya seeks a high-quality coffee experience that feels authentic and supports local craft. She desires a welcoming, aesthetically pleasing environment where she can work remotely, meet friends, or simply enjoy a moment of peace, away from the generic feel of larger chains. She values the unique character, ethical sourcing, and community contribution of independent businesses."
+          },
+          "validation_checks": {
+            "has_name": true,
+            "has_age_range": true,
+            "has_interests": true,
+            "has_platforms": true,
+            "has_creative_style": true,
+            "has_motivation": true,
+            "age_range_reasonable": false,
+            "platforms_relevant": true
+          },
+          "score": 0.88,
+          "passed_checks": 7,
+          "total_checks": 8
+        },
+        "competitor": {
+          "success": true,
+          "duration_seconds": 8.98,
+          "competitors_analyzed": 2,
+          "score": 1.0
+        },
+        "planner": {
+          "success": true,
+          "duration_seconds": 18.0,
+          "scenarios": {
+            "standard_plan": {
+              "total_budget": 5000.0,
+              "duration_weeks": 8,
+              "channels": [
+                {
+                  "name": "Google Ads (Local Search & Maps)",
+                  "budget_share_percent": 30.0,
+                  "reasoning": "Essential for increasing foot traffic for a local business. Anya uses Google Maps for discovery and local search intent is high for coffee shops. This captures customers actively looking for a coffee shop nearby."
+                },
+                {
+                  "name": "Yelp Enhanced Profile & Ads",
+                  "budget_share_percent": 25.0,
+                  "reasoning": "Yelp is a critical platform for local food and beverage businesses in San Francisco, and Anya uses it to discover places. An enhanced profile allows for better branding, and ads ensure visibility among competitors."
+                },
+                {
+                  "name": "Instagram Ads",
+                  "budget_share_percent": 30.0,
+                  "reasoning": "Instagram is a primary platform for Anya, who is visually driven. This channel allows for showcasing high-quality photography of coffee, unique interior design, and local art, aligning perfectly with her creative style and interests in independent businesses and aesthetic environments."
+                },
+                {
+                  "name": "Local SF Blogs/Publications Sponsored Content",
+                  "budget_share_percent": 15.0,
+                  "reasoning": "Anya follows local SF blogs/news (e.g., SFist, Eater SF) for discovering 'hidden gems' and local culture. Sponsored content or features in these publications provide authentic endorsement and reach a highly targeted, engaged local audience that values independent businesses."
+                }
+              ]
+            },
+            "aggressive_plan": {
+              "total_budget": 5000.0,
+              "duration_weeks": 8,
+              "channels": [
+                {
+                  "name": "Google Ads (Aggressive Local & Competitor Bidding)",
+                  "budget_share_percent": 30.0,
+                  "reasoning": "To maximize impact, this strategy involves aggressive bidding on broader coffee-related terms, location-specific keywords, and potentially competitor names (where strategic and legal) to dominate local search results and capture customers from established chains like Starbucks and Blue Bottle."
+                },
+                {
+                  "name": "Instagram & Facebook Ads (Extensive Targeting & Retargeting)",
+                  "budget_share_percent": 35.0,
+                  "reasoning": "Leveraging Meta's advanced targeting capabilities to reach a broad yet precise audience. This includes lookalike audiences, custom audiences based on website visitors or customer lists, and retargeting ads to maximize visual exposure, engagement, and conversion for Anya's demographic."
+                },
+                {
+                  "name": "Experiential Marketing / Pop-up Event Series",
+                  "budget_share_percent": 20.0,
+                  "reasoning": "A high-impact strategy to create significant buzz and direct engagement. Hosting a series of unique pop-up events or a grand opening celebration can generate media attention, word-of-mouth, and establish a distinctive 'third place' experience that differentiates Joe's from competitors."
+                },
+                {
+                  "name": "Local Influencer Marketing Campaign (Tiered Approach)",
+                  "budget_share_percent": 15.0,
+                  "reasoning": "Partnering with 2-3 prominent local SF food/lifestyle influencers and several micro-influencers to generate authentic recommendations and sustained buzz. This directly taps into Anya's trust in independent voices and desire for 'hidden gems' and community connection."
+                }
+              ]
+            },
+            "experimental_plan": {
+              "total_budget": 5000.0,
+              "duration_weeks": 8,
+              "channels": [
+                {
+                  "name": "Local Artisan/Artist Collaboration & Event Series",
+                  "budget_share_percent": 30.0,
+                  "reasoning": "Aligns perfectly with Anya's interests in 'local art and design' and 'independent businesses.' Hosting art exhibitions, design talks, or pop-up shops featuring local artisans within the coffee shop creates a unique cultural hub, generates organic content, and attracts a highly engaged audience seeking authentic, non-corporate experiences."
+                },
+                {
+                  "name": "Hyper-Local Instagram & TikTok UGC Challenge",
+                  "budget_share_percent": 25.0,
+                  "reasoning": "Encourages user-generated content (UGC) by launching creative challenges (e.g., 'My Joe's Coffee Moment,' 'SF Hidden Gem with Joe's') with specific local hashtags. This builds community, leverages viral potential, and authentically showcases the coffee shop through the eyes of its patrons, appealing to Anya's desire for storytelling and unique discoveries."
+                },
+                {
+                  "name": "Interactive Coffee Workshops & Tasting Events",
+                  "budget_share_percent": 25.0,
+                  "reasoning": "Taps into Anya's interest in 'specialty coffee brewing' and community. Offering workshops (latte art, home brewing techniques, unique bean tastings) positions Joe's Coffee as an expert and a community hub, fostering deep engagement and loyalty beyond a simple transaction. These events can be promoted via Eventbrite and social media."
+                },
+                {
+                  "name": "Geo-Fencing Mobile Ads (Competitor & Local Hotspots)",
+                  "budget_share_percent": 20.0,
+                  "reasoning": "An innovative and precise targeting method. Geo-fencing allows Joe's Coffee to deliver targeted mobile ads to users within a specific radius of competitor locations (Starbucks, Blue Bottle), co-working spaces, or local art galleries. This captures high-intent customers when they are most likely to make a coffee decision, offering a compelling alternative to the generic chains."
+                }
+              ]
+            }
+          },
+          "validation_checks": {
+            "standard_has_4_channels": true,
+            "standard_budget_matches": false,
+            "standard_duration_matches": true,
+            "standard_budget_sums_to_100": true,
+            "standard_all_channels_named": true,
+            "standard_all_have_reasoning": true,
+            "aggressive_has_4_channels": true,
+            "aggressive_budget_matches": false,
+            "aggressive_duration_matches": true,
+            "aggressive_budget_sums_to_100": true,
+            "aggressive_all_channels_named": true,
+            "aggressive_all_have_reasoning": true,
+            "experimental_has_4_channels": true,
+            "experimental_budget_matches": false,
+            "experimental_duration_matches": true,
+            "experimental_budget_sums_to_100": true,
+            "experimental_all_channels_named": true,
+            "experimental_all_have_reasoning": true,
+            "scenarios_are_different": true
+          },
+          "score": 0.84,
+          "passed_checks": 16,
+          "total_checks": 19
+        },
+        "creative": {
+          "success": true,
+          "duration_seconds": 7.32,
+          "creatives": {
+            "ideas": [
+              {
+                "title": "SF Artisan Showcase",
+                "description": "Launch a recurring 'SF Artisan Showcase' series featuring different local artists each month. Promote through visually rich Instagram stories and posts highlighting the art, the artist's story, and how their work enhances Joe's unique atmosphere. Host small 'meet the artist' events to foster community engagement and draw new visitors."
+              },
+              {
+                "title": "Your Remote Work Haven",
+                "description": "Create a campaign showcasing Joe's as the ultimate San Francisco remote work spot. Highlight the comfortable seating, natural light, free Wi-Fi, and curated ambient playlists. Use high-quality photography of people working productively and enjoying their artisanal coffee, paired with testimonials about the inspiring atmosphere."
+              },
+              {
+                "title": "The Craft Behind the Cup",
+                "description": "Develop content that deep-dives into the craftsmanship of Joe's coffee. Share stories about ethical bean sourcing, the meticulous brewing process, and the passion of the baristas. This could include short video clips or photo essays demonstrating latte art, pour-over techniques, and the unique flavor profiles of different blends, appealing to specialty coffee enthusiasts."
+              }
+            ],
+            "hashtags": [
+              "#JoesCoffeeSF",
+              "#SFArtisan",
+              "#SpecialtyCoffeeSF",
+              "#LocalSFgems",
+              "#SanFranciscoCoffee",
+              "#RemoteWorkVibes",
+              "#IndependentCoffee",
+              "#CoffeeCultureSF",
+              "#SupportLocalSF",
+              "#BrewedWithPurpose"
+            ],
+            "slogans": [
+              "Joe's Coffee: Crafted for San Francisco. Brewed for You.",
+              "Your SF Escape. Artisan Coffee, Local Soul.",
+              "Taste the Art. Live the Vibe. Joe's Coffee."
+            ],
+            "short_ad_copy": "Discover Joe's Coffee: San Francisco's artisan brew, perfect for remote work and local art appreciation. Your new favorite spot.",
+            "long_ad_copy": "Tired of the ordinary? Step into Joe's Coffee Shop, a true San Francisco gem where every cup tells a story of craft and community. We meticulously source our beans, ensuring a specialty brew that delights discerning palates like yours. Immerse yourself in our beautifully designed space, adorned with rotating local art, perfect for inspiring remote work or a mindful moment. Find your perfect blend of quiet productivity and vibrant local culture. More than just coffee, it's an experience built for the artisan appreciator, supporting independent spirit in the heart of SF.",
+            "cta_options": [
+              "Visit Joe's Coffee Today!",
+              "Discover Your New Favorite SF Coffee Spot.",
+              "Experience Artisan Coffee in San Francisco."
+            ]
+          },
+          "validation_checks": {
+            "has_3_ideas": true,
+            "ideas_have_titles": true,
+            "ideas_have_descriptions": true,
+            "has_10_hashtags": true,
+            "has_3_slogans": true,
+            "short_copy_length": true,
+            "long_copy_length": true,
+            "has_3_ctas": true,
+            "no_empty_fields": true
+          },
+          "score": 1.0,
+          "passed_checks": 9,
+          "total_checks": 9
+        },
+        "performance": {
+          "success": true,
+          "duration_seconds": 20.89,
+          "score": 1.0
+        },
+        "critic": {
+          "success": true,
+          "duration_seconds": 20.76,
+          "evaluation": {
+            "overall_score": 0.77,
+            "dimension_scores": {
+              "channel_mix": 0.9,
+              "budget_logic": 0.4,
+              "persona_alignment": 0.95,
+              "competitor_differentiation": 0.9,
+              "creative_integration": 0.95,
+              "feasibility": 0.5
+            },
+            "issues": [
+              "The overall budget of $5000 for 8 weeks in San Francisco is significantly low for achieving substantial increases in foot traffic and brand awareness in a highly competitive market.",
+              "Budget allocations for experiential marketing, influencer campaigns, artisan collaborations, and event series in the 'Aggressive' and 'Experimental' plans are highly unrealistic and insufficient to execute a 'series' or 'tiered' approach effectively in San Francisco. For example, $1000 for an 8-week 'Pop-up Event Series' or $750 for a 'Tiered Influencer Marketing Campaign' is not feasible for meaningful impact.",
+              "While the ideas are strong, the feasibility of the more innovative and impactful strategies (Experiential, Experimental plans) is severely compromised by the inadequate budget, making them difficult to execute beyond a very limited scope."
+            ],
+            "strengths": [
+              "Exceptional persona alignment: The entire strategy, from channel selection to creative concepts, perfectly targets 'Anya the Artisan Appreciator's' interests, platforms, and motivations.",
+              "Strong competitor differentiation: The plans effectively position Joe's Coffee as a unique, artisan-focused, community-driven space, distinct from both mass-market chains and other artisanal competitors.",
+              "High-quality creative integration: The creative ideas, slogans, and CTAs are authentic, visually rich, and perfectly align with the brand's desired image and the persona's aesthetic preferences.",
+              "Well-chosen channel mixes: The selected channels across all three plans are highly relevant to the target persona's digital habits and discovery behaviors."
+            ],
+            "recommendations": [
+              "Significantly increase the overall marketing budget to allow for more impactful execution of the proposed strategies, especially for experiential and influencer initiatives in a high-cost market like San Francisco.",
+              "If the budget cannot be increased, re-evaluate and scale down the scope of experiential marketing, influencer campaigns, and event series. Instead of a 'series' or 'tiered approach,' focus on one highly impactful, well-funded single event or collaboration.",
+              "Prioritize and focus: Given the budget constraints, it would be more effective to select one media plan (or a hybrid of the most feasible elements) and execute it robustly, rather than spreading a limited budget too thinly across ambitious initiatives.",
+              "Explore cost-effective ways to amplify reach, such as leveraging user-generated content (UGC) more aggressively through contests and community features, which aligns well with Anya's desire for authenticity and local connection."
+            ]
+          },
+          "validation_checks": {
+            "has_overall_score": true,
+            "score_in_range": true,
+            "has_dimension_scores": true,
+            "has_all_dimensions": true,
+            "has_strengths": true,
+            "has_issues_or_recommendations": true
+          },
+          "score": 1.0,
+          "critic_overall_score": 0.77,
+          "passed_checks": 6,
+          "total_checks": 6
+        }
+      },
+      "total_duration": 83.55,
+      "overall_success": true,
+      "average_agent_score": 0.95,
+      "critic_overall_score": 0.77,
+      "meets_minimum_score": true
+    }
+  ],
+  "summary": {
+    "total_tests": 1,
+    "successful_tests": 1,
+    "failed_tests": 0,
+    "average_duration": 83.55,
+    "average_agent_score": 0.95,
+    "average_critic_score": 0.77,
+    "tests_meeting_min_score": 1,
+    "agent_performance": {
+      "persona": {
+        "average_score": 0.88,
+        "average_duration": 7.6,
+        "success_rate": 1.0
+      },
+      "competitor": {
+        "average_score": 1.0,
+        "average_duration": 8.98,
+        "success_rate": 1.0
+      },
+      "planner": {
+        "average_score": 0.84,
+        "average_duration": 18.0,
+        "success_rate": 1.0
+      },
+      "creative": {
+        "average_score": 1.0,
+        "average_duration": 7.32,
+        "success_rate": 1.0
+      },
+      "performance": {
+        "average_score": 1.0,
+        "average_duration": 20.89,
+        "success_rate": 1.0
+      },
+      "critic": {
+        "average_score": 1.0,
+        "average_duration": 20.76,
+        "success_rate": 1.0
+      }
+    },
+    "category_performance": {
+      "Food & Beverage": {
+        "test_count": 1,
+        "avg_score": 0.95,
+        "avg_critic_score": 0.77
+      }
+    },
+    "duration_stats": {
+      "min": 83.55,
+      "max": 83.55,
+      "total": 83.55
+    }
+  }
+}

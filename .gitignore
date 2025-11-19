@@ -1,0 +1,61 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Environment
+.env
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Project specific
+ad_planner.db
+marketing_advisor.db
+*.db
+*.sqlite3
+vector_store/
+chroma_db/
+exports/*.pdf
+evaluation_results.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Internal strategy docs and documentation (not for public repo)
+WINNING_STRATEGY.md
+SCORING_VERIFICATION.md
+
+# Exclude all MD files except README.md and arch.md
+*.md
+!README.md
+!arch.md

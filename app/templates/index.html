@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Smart Ad Planner - Create Your Marketing Plan</title>
+    <link rel="stylesheet" href="/static/styles.css?v=2">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚀 AI-Powered Small Business Ad Planner</h1>
+            <h3>by Amit Dar</h3>
+        </header>
+
+        <!-- Test Data Buttons -->
+        <div class="test-data-buttons">
+            <button type="button" class="test-data-btn" onclick="loadTestData('coffee_shop')">
+                ☕ Try Coffee Shop Example
+            </button>
+            <button type="button" class="test-data-btn" onclick="loadTestData('yoga_studio')">
+                🧘 Try Yoga Studio Example
+            </button>
+            <button type="button" class="test-data-btn" onclick="loadTestData('boutique')">
+                👗 Try Fashion Boutique Example
+            </button>
+        </div>
+
+        <form id="planForm">
+            <div class="form-section">
+                <h2>Business Information</h2>
+
+                <div class="form-group">
+                    <label for="business_name">Business Name *</label>
+                    <input type="text" id="business_name" name="business_name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="business_type">Business Type *</label>
+                    <input type="text" id="business_type" name="business_type"
+                           placeholder="e.g., Coffee Shop, Boutique, SaaS Company" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="zip_code">ZIP Code *</label>
+                    <input type="text" id="zip_code" name="zip_code"
+                           placeholder="e.g., 94102" pattern="[0-9]{5}" maxlength="5" required>
+                    <small>Enter the ZIP code where your business is located. This helps us target the right geographic area and calculate optimal advertising reach.</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="miles_radius">Target Radius (Miles) *</label>
+                    <input type="number" id="miles_radius" name="miles_radius"
+                           min="1" max="100" placeholder="e.g., 5" required>
+                    <small>How far should we target customers? We'll suggest the optimal radius based on your business type.</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="goal">Marketing Goal *</label>
+                    <textarea id="goal" name="goal" rows="5"
+                              placeholder="Be specific about your goals. Examples:&#10;• Increase weekday lunch traffic by 30% over the next quarter by targeting office workers within 1 mile&#10;• Build brand awareness among millennials (25-35) in Denver and drive 500+ Instagram followers per month&#10;• Drive 20% more online sales for our new product line by targeting existing customers and lookalike audiences"
+                              required></textarea>
+                    <small>Tip: Include specific metrics, target audience, timeframe, and geographic focus for best results</small>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>Budget & Timeline</h2>
+
+                <div class="form-group">
+                    <label for="monthly_budget">Monthly Budget (USD) *</label>
+                    <input type="number" id="monthly_budget" name="monthly_budget"
+                           min="100" placeholder="2500" required>
+                    <small>Your total advertising spend per month. We'll use this to allocate budget across different channels (social media, search ads, local ads) and predict your expected reach and ROI.</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="duration_weeks">Campaign Duration (weeks) *</label>
+                    <input type="number" id="duration_weeks" name="duration_weeks"
+                           min="1" max="52" placeholder="8" required>
+                    <small>How long you want to run this campaign. Longer campaigns build momentum and brand awareness, while shorter campaigns create urgency. We'll optimize the strategy based on your timeline.</small>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>Competitive Landscape</h2>
+
+                <div class="form-group">
+                    <label for="competitors">Competitors (comma-separated)</label>
+                    <input type="text" id="competitors" name="competitors"
+                           placeholder="e.g., Starbucks, Blue Bottle Coffee">
+                    <small>Optional: List 1-3 main competitors. We'll analyze their strategies to identify gaps in the market and opportunities to differentiate your business. This helps us craft unique messaging and find channels where you can stand out.</small>
+                </div>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="btn-primary" id="submitBtn">
+                    Generate Marketing Plan
+                </button>
+            </div>
+        </form>
+
+        <!-- Progress Section -->
+        <div id="progressSection" class="progress-section" style="display: none;">
+            <div class="progress-container">
+                <h2>🤖 AI Agents Working...</h2>
+                <p class="progress-subtitle">Watch our 8 specialized agents create your marketing plan</p>
+
+                <!-- Overall Progress Bar -->
+                <div class="progress-bar-container">
+                    <div class="progress-bar" id="progressBar">
+                        <div class="progress-fill" id="progressFill" style="width: 0%"></div>
+                    </div>
+                    <div class="progress-percentage" id="progressPercentage">0%</div>
+                </div>
+
+                <!-- Current Agent Status -->
+                <div class="current-agent" id="currentAgent">
+                    <div class="agent-icon" id="agentIcon">🔍</div>
+                    <div class="agent-info">
+                        <div class="agent-name" id="agentName">Initializing...</div>
+                        <div class="agent-message" id="agentMessage">Starting plan generation...</div>
+                    </div>
+                </div>
+
+                <!-- Agent Steps Timeline -->
+                <div class="agent-timeline">
+                    <div class="timeline-step" data-step="1">
+                        <div class="timeline-icon">🔍</div>
+                        <div class="timeline-label">RAG</div>
+                    </div>
+                    <div class="timeline-step" data-step="2">
+                        <div class="timeline-icon">👥</div>
+                        <div class="timeline-label">Personas</div>
+                    </div>
+                    <div class="timeline-step" data-step="3">
+                        <div class="timeline-icon">📍</div>
+                        <div class="timeline-label">Location</div>
+                    </div>
+                    <div class="timeline-step" data-step="4">
+                        <div class="timeline-icon">🏆</div>
+                        <div class="timeline-label">Competitors</div>
+                    </div>
+                    <div class="timeline-step" data-step="5">
+                        <div class="timeline-icon">💰</div>
+                        <div class="timeline-label">Budget</div>
+                    </div>
+                    <div class="timeline-step" data-step="6">
+                        <div class="timeline-icon">🎨</div>
+                        <div class="timeline-label">Creative</div>
+                    </div>
+                    <div class="timeline-step" data-step="7">
+                        <div class="timeline-icon">📈</div>
+                        <div class="timeline-label">Performance</div>
+                    </div>
+                    <div class="timeline-step" data-step="8">
+                        <div class="timeline-icon">✅</div>
+                        <div class="timeline-label">Quality</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="loading" class="loading" style="display: none;">
+            <div class="spinner"></div>
+            <p>Generating your personalized marketing plan...</p>
+            <p class="loading-detail">Our AI agents are analyzing your business, competitors, and creating custom strategies.</p>
+        </div>
+
+        <div id="result" class="result" style="display: none;"></div>
+    </div>
+
+    <script>
+        // Function to load test data
+        async function loadTestData(businessType) {
+            // Show loading state on buttons
+            const buttons = document.querySelectorAll('.test-data-btn');
+            buttons.forEach(btn => {
+                btn.disabled = true;
+                if (btn.textContent.includes(businessType.replace('_', ' '))) {
+                    btn.innerHTML = '⏳ Loading...';
+                }
+            });
+
+            try {
+                const response = await fetch('/api/test-data/generate', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ business_type: businessType })
+                });
+
+                if (!response.ok) {
+                    throw new Error('Failed to generate test data');
+                }
+
+                const data = await response.json();
+
+                // Fill form with generated data
+                document.getElementById('business_name').value = data.business_name;
+                document.getElementById('business_type').value = data.business_type;
+                document.getElementById('zip_code').value = data.zip_code;
+                document.getElementById('miles_radius').value = data.miles_radius;
+                document.getElementById('goal').value = data.goal;
+                document.getElementById('monthly_budget').value = data.monthly_budget;
+                document.getElementById('duration_weeks').value = data.duration_weeks;
+                document.getElementById('competitors').value = data.competitors;
+
+                // Scroll to form
+                document.getElementById('planForm').scrollIntoView({ behavior: 'smooth' });
+
+            } catch (error) {
+                alert('Error loading test data: ' + error.message);
+            } finally {
+                // Reset buttons
+                buttons.forEach(btn => {
+                    btn.disabled = false;
+                });
+                // Restore original button text
+                buttons[0].innerHTML = '☕ Try Coffee Shop Example';
+                buttons[1].innerHTML = '🧘 Try Yoga Studio Example';
+                buttons[2].innerHTML = '👗 Try Fashion Boutique Example';
+            }
+        }
+
+        // Progress tracking variables
+        let eventSource = null;
+        let progressCompleted = false;
+
+        document.getElementById('planForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            // Hide any previous results
+            document.getElementById('result').style.display = 'none';
+            document.getElementById('submitBtn').disabled = true;
+
+            // Collect form data
+            const formData = {
+                profile: {
+                    business_name: document.getElementById('business_name').value,
+                    business_type: document.getElementById('business_type').value,
+                    zip_code: document.getElementById('zip_code').value,
+                    miles_radius: parseInt(document.getElementById('miles_radius').value),
+                    goal: document.getElementById('goal').value,
+                    monthly_budget: parseFloat(document.getElementById('monthly_budget').value),
+                    duration_weeks: parseInt(document.getElementById('duration_weeks').value),
+                    is_local: true,  // Always true - focusing on local small businesses
+                    competitors: document.getElementById('competitors').value.split(',').map(c => c.trim()).filter(c => c)
+                }
+            };
+
+            try {
+                // Generate a session ID (or the server will generate one)
+                const sessionId = generateSessionId();
+                console.log('Generated session ID:', sessionId);
+
+                // Start progress tracking BEFORE making the request
+                startProgressTracking(sessionId);
+
+                // Use the progress endpoint
+                console.log('Calling endpoint: /api/plan/plan-with-progress');
+                const response = await fetch('/api/plan/plan-with-progress', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        ...formData,
+                        session_id: sessionId
+                    })
+                });
+
+                if (!response.ok) {
+                    throw new Error('Failed to generate plan');
+                }
+
+                const data = await response.json();
+
+                // Hide progress section and show results
+                stopProgressTracking();
+                displayResults(data);
+
+            } catch (error) {
+                stopProgressTracking();
+                alert('Error: ' + error.message);
+            } finally {
+                document.getElementById('submitBtn').disabled = false;
+            }
+        });
+
+        function generateSessionId() {
+            return 'sess_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+        }
+
+        function startProgressTracking(sessionId) {
+            // Reset completion flag
+            progressCompleted = false;
+
+            // Show progress section, hide loading
+            document.getElementById('progressSection').style.display = 'block';
+            document.getElementById('loading').style.display = 'none';
+
+            // Scroll to progress section smoothly
+            document.getElementById('progressSection').scrollIntoView({
+                behavior: 'smooth',
+                block: 'center'
+            });
+
+            // Reset progress bar
+            document.getElementById('progressFill').style.width = '0%';
+            document.getElementById('progressPercentage').textContent = '0%';
+            document.getElementById('agentIcon').textContent = '🔍';
+            document.getElementById('agentName').textContent = 'Initializing...';
+            document.getElementById('agentMessage').textContent = 'Starting plan generation...';
+
+            // Reset timeline
+            const timelineSteps = document.querySelectorAll('.timeline-step');
+            timelineSteps.forEach(step => {
+                step.classList.remove('active', 'completed');
+            });
+
+            // Connect to SSE endpoint
+            console.log('Connecting to SSE:', `/api/plan/progress/${sessionId}`);
+            eventSource = new EventSource(`/api/plan/progress/${sessionId}`);
+
+            eventSource.addEventListener('progress', function(event) {
+                console.log('Progress update:', event.data);
+                const data = JSON.parse(event.data);
+                updateProgress(data);
+            });
+
+            eventSource.addEventListener('error', function(event) {
+                // Only log error if we haven't completed successfully
+                if (!progressCompleted) {
+                    console.error('SSE Error:', event);
+                    stopProgressTracking();
+                } else {
+                    console.log('SSE stream closed after completion (expected)');
+                }
+            });
+
+            eventSource.onopen = function() {
+                console.log('SSE connection opened');
+            };
+        }
+
+        function updateProgress(data) {
+            // Update progress bar
+            const progressFill = document.getElementById('progressFill');
+            const progressPercentage = document.getElementById('progressPercentage');
+            progressFill.style.width = data.progress_percent + '%';
+            progressPercentage.textContent = data.progress_percent + '%';
+
+            // Update current agent
+            const agentIcon = document.getElementById('agentIcon');
+            const agentName = document.getElementById('agentName');
+            const agentMessage = document.getElementById('agentMessage');
+
+            // Get icon from message or use default
+            const iconMatch = data.message.match(/([🔍👥📍🏆💰🎨📈✅])/);
+            const icon = iconMatch ? iconMatch[1] : '🤖';
+
+            agentIcon.textContent = icon;
+            agentName.textContent = data.agent_name;
+            agentMessage.textContent = data.message.replace(/[🔍👥📍🏆💰🎨📈✅]\s*/, '');
+
+            // Update timeline
+            const timelineSteps = document.querySelectorAll('.timeline-step');
+            timelineSteps.forEach((step, index) => {
+                const stepNum = index + 1;
+                step.classList.remove('active', 'completed');
+
+                if (stepNum < data.step) {
+                    step.classList.add('completed');
+                } else if (stepNum === data.step) {
+                    step.classList.add('active');
+                }
+            });
+
+            // Mark as completed and close connection when complete
+            if (data.progress_percent === 100 || data.status === 'completed') {
+                progressCompleted = true;
+                setTimeout(() => stopProgressTracking(), 500);
+            }
+        }
+
+        function stopProgressTracking() {
+            if (eventSource) {
+                eventSource.close();
+                eventSource = null;
+            }
+            document.getElementById('progressSection').style.display = 'none';
+        }
+
+        function displayResults(data) {
+            const resultDiv = document.getElementById('result');
+
+            let html = `
+                <h2>Your Marketing Plan is Ready!</h2>
+
+                <div class="section">
+                    <h3>🎯 Target Persona</h3>
+                    <p class="section-subtitle">The ideal customer profile based on your business goals and market</p>
+                    <div class="persona-card">
+                        <h4>${data.persona.name}</h4>
+                        <p><strong>Age:</strong> ${data.persona.age_range}</p>
+                        <p><strong>Interests:</strong> ${data.persona.interests.join(', ')}</p>
+                        <p><strong>Platforms:</strong> ${data.persona.platforms.join(', ')}</p>
+                        <p><strong>Creative Style:</strong> ${data.persona.creative_style}</p>
+                        <p><strong>Motivation:</strong> ${data.persona.motivation}</p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>📍 Recommended Target Radius</h3>
+                    <p class="section-subtitle">Optimized miles radius for your business type and advertising goals</p>
+                    <div class="location-recommendation-card">
+                        <div class="miles-comparison">
+                            <div class="miles-column">
+                                <p class="miles-label">Your Selection</p>
+                                <p class="miles-value current">${data.location_recommendation.current_miles} miles</p>
+                            </div>
+                            <div class="miles-arrow">→</div>
+                            <div class="miles-column">
+                                <p class="miles-label">Our Recommendation</p>
+                                <p class="miles-value suggested">${data.location_recommendation.suggested_miles} miles</p>
+                            </div>
+                        </div>
+                        <div class="location-details">
+                            <p><strong>Business Category:</strong> ${data.location_recommendation.business_type_category}</p>
+                            <p><strong>Typical Customer Travel:</strong> ${data.location_recommendation.typical_customer_travel}</p>
+                            <div class="reasoning-box">
+                                <h5>Why This Radius?</h5>
+                                <p>${data.location_recommendation.reasoning}</p>
+                            </div>
+                            <h5>Optimization Factors:</h5>
+                            <ul class="optimization-factors">
+                                ${data.location_recommendation.optimization_factors.map(factor => `<li>✓ ${factor}</li>`).join('')}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>📊 Media Plan Scenarios</h3>
+                    <div class="plan-scenarios-explanation">
+                        <p><strong>Standard Plan:</strong> Conservative approach focusing on proven channels with predictable ROI</p>
+                        <p><strong>Aggressive Plan:</strong> Higher budget allocation to paid ads for maximum reach and faster results</p>
+                        <p><strong>Experimental Plan:</strong> Creative mix with influencers, content marketing, and emerging platforms</p>
+                    </div>
+                    <div class="scenarios-grid">
+                        ${renderScenario('Standard', data.scenarios.standard_plan, data.performance.standard)}
+                        ${renderScenario('Aggressive', data.scenarios.aggressive_plan, data.performance.aggressive)}
+                        ${renderScenario('Experimental', data.scenarios.experimental_plan, data.performance.experimental)}
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>💰 Budget Scaling Recommendations</h3>
+                    <p class="section-subtitle">Want to double your reach? Here's what you'll need:</p>
+                    <div class="scenarios-grid">
+                        ${renderBudgetScaling('Standard', data.scenarios.standard_plan, data.performance.standard)}
+                        ${renderBudgetScaling('Aggressive', data.scenarios.aggressive_plan, data.performance.aggressive)}
+                        ${renderBudgetScaling('Experimental', data.scenarios.experimental_plan, data.performance.experimental)}
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>🎨 Creative Assets</h3>
+                    <div class="creative-section">
+                        <h4>Campaign Ideas:</h4>
+                        ${data.creatives.ideas.map(idea => `
+                            <div class="idea-card">
+                                <h5>${idea.title}</h5>
+                                <p>${idea.description}</p>
+                                ${idea.image_url ? `
+                                    <div class="idea-image">
+                                        <img src="${idea.image_url}" alt="${idea.image_alt || idea.title}" loading="lazy" />
+                                        <p class="image-credit">📷 Image via ${idea.image_prompt ? 'Search: ' + idea.image_prompt : 'MCP Image Search'}</p>
+                                    </div>
+                                ` : ''}
+                            </div>
+                        `).join('')}
+
+                        <h4>Slogans:</h4>
+                        <ul>
+                            ${data.creatives.slogans.map(s => `<li>"${s}"</li>`).join('')}
+                        </ul>
+
+                        <h4>Ad Copy (Short):</h4>
+                        <p class="ad-copy">${data.creatives.short_ad_copy}</p>
+
+                        <h4>Hashtags:</h4>
+                        <p class="hashtags">${data.creatives.hashtags.map(h => '#' + h.replace('#', '')).join(' ')}</p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>💡 Plan Strengths</h3>
+                    <p class="section-subtitle">Key advantages of this marketing approach</p>
+                    ${data.critic_evaluation.strengths ? `
+                        <ul class="strengths-list">${data.critic_evaluation.strengths.map(s => `<li>${getStrengthIcon(s)} ${s}</li>`).join('')}</ul>
+                    ` : ''}
+                </div>
+
+                <div class="actions">
+                    <button onclick="downloadPDF('${data.session_id}')" class="btn-primary">
+                        Download PDF Report
+                    </button>
+                </div>
+            `;
+
+            resultDiv.innerHTML = html;
+            resultDiv.style.display = 'block';
+            resultDiv.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function renderScenario(name, plan, performance) {
+            return `
+                <div class="scenario-card">
+                    <h4>${name} Plan</h4>
+                    <p class="budget">$${plan.total_budget.toLocaleString()} / ${plan.duration_weeks} weeks</p>
+
+                    <div class="channels">
+                        ${plan.channels.map(ch => `
+                            <div class="channel-item">
+                                <strong>${ch.name}</strong> (${ch.budget_share_percent}%)
+                                <small>${ch.reasoning}</small>
+                            </div>
+                        `).join('')}
+                    </div>
+
+                    <div class="performance">
+                        <h5>Expected Performance:</h5>
+                        <p>Reach: ${performance.reach}</p>
+                        ${performance.reach_analytics && performance.reach_analytics.target_population ? `
+                            <div class="reach-infographic">
+                                <p class="reach-percentage-label">${performance.reach_analytics.percentage_display}</p>
+                                <div class="reach-bar-container">
+                                    <div class="reach-bar" style="width: ${Math.min(performance.reach_analytics.percentage_max, 100)}%">
+                                    </div>
+                                </div>
+                                <p class="reach-details">
+                                    Reaching ${performance.reach_analytics.reach_min.toLocaleString()}-${performance.reach_analytics.reach_max.toLocaleString()}
+                                    out of ${performance.reach_analytics.target_population.toLocaleString()} target audience
+                                </p>
+                            </div>
+                        ` : ''}
+                        <p>Clicks: ${performance.clicks}</p>
+                        <p>CPC: ${performance.cpc_estimate}</p>
+                        <p>ROI: ${performance.roi_range}</p>
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderBudgetScaling(name, plan, performance) {
+            if (!performance.budget_scaling || !performance.budget_scaling.recommended_budget) {
+                return '';
+            }
+
+            const scaling = performance.budget_scaling;
+            const increasePercent = scaling.budget_increase_percent;
+            const efficiencyChange = scaling.efficiency_change_percent;
+
+            return `
+                <div class="scenario-card budget-scaling-card">
+                    <h4>${name} Plan</h4>
+                    <div class="budget-comparison">
+                        <div class="budget-current">
+                            <p class="budget-label">Current Budget</p>
+                            <p class="budget-amount">$${scaling.current_budget.toLocaleString()}</p>
+                            <p class="reach-range">${scaling.current_reach_range} people</p>
+                        </div>
+                        <div class="budget-arrow">→</div>
+                        <div class="budget-recommended">
+                            <p class="budget-label">To Double Reach</p>
+                            <p class="budget-amount recommended">$${scaling.recommended_budget.toLocaleString()}</p>
+                            <p class="reach-range">${scaling.target_reach_range} people</p>
+                        </div>
+                    </div>
+                    <div class="budget-insights">
+                        <p><strong>Budget Increase:</strong> +$${scaling.budget_increase.toLocaleString()} (+${increasePercent}%)</p>
+                        <p><strong>Cost per Reach:</strong> $${scaling.current_cost_per_reach} → $${scaling.new_cost_per_reach}</p>
+                        <p class="${efficiencyChange > 0 ? 'efficiency-warning' : 'efficiency-good'}">
+                            <strong>Efficiency:</strong> ${efficiencyChange > 0 ? '↑' : '↓'}${Math.abs(efficiencyChange)}% cost per person
+                            ${efficiencyChange > 0 ? '(diminishing returns expected)' : ''}
+                        </p>
+                    </div>
+                </div>
+            `;
+        }
+
+        function getStrengthIcon(strengthText) {
+            const text = strengthText.toLowerCase();
+
+            // Budget and cost related
+            if (text.includes('budget') || text.includes('cost') || text.includes('efficient') || text.includes('affordable')) {
+                return '💰';
+            }
+            // Target audience and persona
+            if (text.includes('persona') || text.includes('audience') || text.includes('target') || text.includes('demographic')) {
+                return '🎯';
+            }
+            // Channels and platforms
+            if (text.includes('channel') || text.includes('platform') || text.includes('social') || text.includes('instagram') || text.includes('facebook')) {
+                return '📱';
+            }
+            // Creative and content
+            if (text.includes('creative') || text.includes('content') || text.includes('message') || text.includes('copy')) {
+                return '🎨';
+            }
+            // Goals and objectives
+            if (text.includes('goal') || text.includes('objective') || text.includes('align')) {
+                return '🎯';
+            }
+            // Performance and results
+            if (text.includes('perform') || text.includes('result') || text.includes('roi') || text.includes('return')) {
+                return '📈';
+            }
+            // Timing and schedule
+            if (text.includes('time') || text.includes('schedule') || text.includes('duration')) {
+                return '⏱️';
+            }
+            // Strategy and planning
+            if (text.includes('strateg') || text.includes('plan') || text.includes('approach')) {
+                return '🧠';
+            }
+            // Competition
+            if (text.includes('compet') || text.includes('differentiat')) {
+                return '🏆';
+            }
+            // Reach and awareness
+            if (text.includes('reach') || text.includes('awareness') || text.includes('visibility')) {
+                return '🌟';
+            }
+            // Default
+            return '✓';
+        }
+
+        async function downloadPDF(sessionId) {
+            window.location.href = `/download-pdf/${sessionId}`;
+        }
+    </script>
+</body>
+</html>

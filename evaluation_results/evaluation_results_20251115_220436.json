@@ -1,0 +1,964 @@
+{
+  "evaluation_run": {
+    "timestamp": "2025-11-15T22:00:12.789032",
+    "total_tests": 5,
+    "gemini_model": "gemini-2.5-flash"
+  },
+  "test_results": [
+    {
+      "test_id": "test_001",
+      "business_name": "Joe's Coffee Shop",
+      "category": "Food & Beverage",
+      "start_time": 1763272812.7890549,
+      "agents": {
+        "persona": {
+          "success": true,
+          "duration_seconds": 7.35,
+          "persona": {
+            "name": "The Neighborhood Nook Seeker",
+            "age_range": "25-38",
+            "interests": [
+              "Exploring local cafes",
+              "Remote work productivity",
+              "Artisanal coffee trends",
+              "Community events",
+              "Sustainable living",
+              "Independent art & music",
+              "Urban exploration",
+              "Healthy eating"
+            ],
+            "platforms": [
+              "Instagram",
+              "Yelp",
+              "Google Maps",
+              "Local Facebook groups",
+              "TikTok"
+            ],
+            "creative_style": "Authentic, warm, and visually appealing content showcasing the cafe's unique ambiance, high-quality coffee, and community spirit. Values behind-the-scenes glimpses, local collaborations, and genuine customer stories over glossy advertisements.",
+            "motivation": "To find a consistent, high-quality coffee experience in a comfortable, community-focused environment that supports local businesses and offers a welcoming space for both productivity and relaxation, unlike the generic chain options or overly minimalist alternatives."
+          },
+          "validation_checks": {
+            "has_name": true,
+            "has_age_range": true,
+            "has_interests": true,
+            "has_platforms": true,
+            "has_creative_style": true,
+            "has_motivation": true,
+            "age_range_reasonable": false,
+            "platforms_relevant": true
+          },
+          "score": 0.88,
+          "passed_checks": 7,
+          "total_checks": 8
+        },
+        "competitor": {
+          "success": true,
+          "duration_seconds": 12.46,
+          "competitors_analyzed": 2,
+          "score": 1.0
+        },
+        "planner": {
+          "success": true,
+          "duration_seconds": 18.93,
+          "scenarios": {
+            "standard_plan": {
+              "total_budget": 2500.0,
+              "duration_weeks": 8,
+              "channels": [
+                {
+                  "name": "Google Maps & Local Search Ads",
+                  "budget_share_percent": 30.0,
+                  "reasoning": "Essential for increasing foot traffic for a local coffee shop. The 'Neighborhood Nook Seeker' frequently uses Google Maps to discover new local spots, especially when searching for 'coffee near me' or specific amenities like 'remote work friendly cafes'."
+                },
+                {
+                  "name": "Instagram Paid Promotion",
+                  "budget_share_percent": 30.0,
+                  "reasoning": "Instagram is a primary platform for the target persona, who values visually appealing, authentic content. Paid promotion allows for geo-targeting within San Francisco to showcase Joe's unique ambiance, artisanal coffee, and community spirit to potential customers."
+                },
+                {
+                  "name": "Yelp Advertising & Enhanced Profile",
+                  "budget_share_percent": 25.0,
+                  "reasoning": "Yelp is highly influential in San Francisco for local business discovery and trust. Investing in an enhanced profile and targeted ads ensures Joe's Coffee Shop stands out, leverages positive reviews, and reaches the persona actively seeking local cafe recommendations."
+                },
+                {
+                  "name": "Local Facebook Groups & Community Outreach",
+                  "budget_share_percent": 15.0,
+                  "reasoning": "This low-cost, high-engagement channel directly taps into the persona's interest in 'community events' and 'local cafes.' Organic posts and light promotion in relevant SF neighborhood groups can build brand awareness and foster a sense of local connection."
+                }
+              ]
+            },
+            "aggressive_plan": {
+              "total_budget": 2500.0,
+              "duration_weeks": 8,
+              "channels": [
+                {
+                  "name": "TikTok Geo-targeted Ads",
+                  "budget_share_percent": 35.0,
+                  "reasoning": "TikTok offers high potential for viral reach and engagement, appealing to the persona's age range and preference for authentic, dynamic content. Geo-targeted ads can quickly build buzz and drive discovery among trend-conscious urban explorers in SF."
+                },
+                {
+                  "name": "Instagram Conversion-Focused Paid Promotions",
+                  "budget_share_percent": 30.0,
+                  "reasoning": "Leveraging Instagram's strong visual platform with aggressive calls-to-action (e.g., 'Order Now,' 'Visit Today for a Special Offer') to drive immediate foot traffic and online orders, capitalizing on impulse decisions from the visually-driven persona."
+                },
+                {
+                  "name": "Local PR & Media Outreach",
+                  "budget_share_percent": 20.0,
+                  "reasoning": "Aggressively pitching Joe's unique 'third place' ambiance, artisanal offerings, and community involvement to local SF blogs, food critics, and 'best of' lists. This can generate significant, high-credibility exposure and differentiate from competitors like Starbucks."
+                },
+                {
+                  "name": "Pop-up Events & Experiential Marketing",
+                  "budget_share_percent": 15.0,
+                  "reasoning": "Hosting distinctive pop-up events (e.g., themed coffee tastings, collaborations with local food trucks) to create immediate buzz, generate user-generated content, and attract the 'Neighborhood Nook Seeker' looking for unique community experiences beyond generic chains."
+                }
+              ]
+            },
+            "experimental_plan": {
+              "total_budget": 2500.0,
+              "duration_weeks": 8,
+              "channels": [
+                {
+                  "name": "Micro-Influencer Collaborations (Instagram/TikTok)",
+                  "budget_share_percent": 35.0,
+                  "reasoning": "Partnering with local San Francisco micro-influencers (aligned with coffee, remote work, local discovery) for authentic, trusted endorsements. This taps into the persona's value for genuine customer stories and local collaborations, generating highly targeted reach and credibility."
+                },
+                {
+                  "name": "User-Generated Content (UGC) Contests & Challenges",
+                  "budget_share_percent": 25.0,
+                  "reasoning": "Launching creative contests (e.g., 'My Joe's Coffee Moment,' 'Latte Art Challenge') on Instagram/TikTok encourages customers to share their experiences. This fosters community, generates authentic content, and amplifies organic reach, aligning with the persona's desire for genuine interaction."
+                },
+                {
+                  "name": "Experiential Workshops & Community Co-creation",
+                  "budget_share_percent": 25.0,
+                  "reasoning": "Hosting unique workshops (e.g., home brewing, latte art classes, coffee tasting) or community co-creation events (e.g., 'design our next seasonal drink'). This creates a strong 'third place' identity, attracts specific interest groups, and builds deep brand loyalty among the 'Neighborhood Nook Seeker'."
+                },
+                {
+                  "name": "Hyper-Local Art/Music Collaborations & Pop-ups",
+                  "budget_share_percent": 15.0,
+                  "reasoning": "Transforming the coffee shop into a hub for local independent art and music by regularly hosting local artist showcases, live acoustic sets, or mini-markets with SF-based artisans. This directly appeals to the persona's interests in 'independent art & music' and 'sustainable living,' creating a unique cultural draw."
+                }
+              ]
+            }
+          },
+          "validation_checks": {
+            "standard_has_4_channels": true,
+            "standard_budget_matches": true,
+            "standard_duration_matches": true,
+            "standard_budget_sums_to_100": true,
+            "standard_all_channels_named": true,
+            "standard_all_have_reasoning": true,
+            "aggressive_has_4_channels": true,
+            "aggressive_budget_matches": true,
+            "aggressive_duration_matches": true,
+            "aggressive_budget_sums_to_100": true,
+            "aggressive_all_channels_named": true,
+            "aggressive_all_have_reasoning": true,
+            "experimental_has_4_channels": true,
+            "experimental_budget_matches": true,
+            "experimental_duration_matches": true,
+            "experimental_budget_sums_to_100": true,
+            "experimental_all_channels_named": true,
+            "experimental_all_have_reasoning": true,
+            "scenarios_are_different": true
+          },
+          "score": 1.0,
+          "passed_checks": 19,
+          "total_checks": 19
+        },
+        "creative": {
+          "success": false,
+          "error": "1 validation error for CreativeAssets\nlong_ad_copy\n  String should have at most 500 characters [type=string_too_long, input_value=\"Tired of generic coffee ..., taste the difference.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/string_too_long",
+          "duration_seconds": 7.483642101287842,
+          "score": 0.0
+        }
+      },
+      "overall_success": false,
+      "error": "CreativeAgent failed"
+    },
+    {
+      "test_id": "test_001",
+      "business_name": "Joe's Coffee Shop",
+      "category": "Food & Beverage",
+      "overall_success": false,
+      "error": "'total_duration'"
+    },
+    {
+      "test_id": "test_002",
+      "business_name": "TechStart SaaS",
+      "category": "Technology/SaaS",
+      "start_time": 1763272859.008128,
+      "agents": {
+        "persona": {
+          "success": true,
+          "duration_seconds": 5.94,
+          "persona": {
+            "name": "The Enterprise Efficiency Architect",
+            "age_range": "38-55",
+            "interests": [
+              "Business process optimization",
+              "Data analytics and reporting",
+              "Scalable technology solutions",
+              "ROI analysis for tech investments",
+              "Team productivity and collaboration tools",
+              "Digital transformation strategies",
+              "Industry best practices"
+            ],
+            "platforms": [
+              "LinkedIn (professional networking, industry groups, thought leadership)",
+              "G2 / Capterra (software review sites)",
+              "Industry webinars and conferences (virtual and in-person)",
+              "Forbes / Harvard Business Review / Wall Street Journal (business tech news)",
+              "Executive leadership forums and communities"
+            ],
+            "creative_style": "Professional, data-backed, value-focused, case-study driven, highlighting clear ROI and implementation success stories. Prefers concise, actionable insights over jargon.",
+            "motivation": "To identify and implement enterprise-level software solutions that drive measurable improvements in operational efficiency, reduce costs, enhance cross-departmental collaboration, and provide strategic insights for sustainable business growth. They are motivated by achieving key business objectives, demonstrating clear value to stakeholders, and advancing their organization's competitive edge."
+          },
+          "validation_checks": {
+            "has_name": true,
+            "has_age_range": true,
+            "has_interests": true,
+            "has_platforms": true,
+            "has_creative_style": true,
+            "has_motivation": true,
+            "age_range_reasonable": false,
+            "platforms_relevant": false
+          },
+          "score": 0.75,
+          "passed_checks": 6,
+          "total_checks": 8
+        },
+        "competitor": {
+          "success": true,
+          "duration_seconds": 13.93,
+          "competitors_analyzed": 3,
+          "score": 1.0
+        },
+        "planner": {
+          "success": true,
+          "duration_seconds": 24.78,
+          "scenarios": {
+            "standard_plan": {
+              "total_budget": 10000.0,
+              "duration_weeks": 12,
+              "channels": [
+                {
+                  "name": "LinkedIn Ads (Targeted Lead Generation)",
+                  "budget_share_percent": 40.0,
+                  "reasoning": "LinkedIn is the primary platform for 'The Enterprise Efficiency Architect' persona. This channel allows for precise targeting by job title, industry, and company size, directly reaching decision-makers with professional, value-focused content and lead generation forms. Given the budget, focus will be on highly qualified, smaller audiences."
+                },
+                {
+                  "name": "SEO & Content Marketing (Thought Leadership)",
+                  "budget_share_percent": 30.0,
+                  "reasoning": "The persona seeks data-backed insights and best practices. Investing in high-quality content (e.g., case studies, whitepapers, blog posts) optimized for enterprise-level keywords will attract organic traffic, establish TechStart SaaS as an authority, and nurture leads over the long term, aligning with their preference for professional, value-focused information."
+                },
+                {
+                  "name": "Software Review Sites (G2/Capterra Profile Optimization)",
+                  "budget_share_percent": 20.0,
+                  "reasoning": "Enterprise decision-makers heavily rely on review sites like G2 and Capterra during their evaluation process. This budget will focus on optimizing TechStart SaaS's profile, responding to reviews, and running small-scale campaigns to encourage new, authentic reviews, crucial for building trust and credibility with the persona."
+                },
+                {
+                  "name": "Industry Webinars/Virtual Events (Co-hosted or Free Participation)",
+                  "budget_share_percent": 10.0,
+                  "reasoning": "The persona attends industry webinars to learn about scalable technology solutions and digital transformation. Rather than costly sponsorships, this budget enables co-hosting a webinar with a complementary partner or actively participating in relevant free/low-cost virtual industry events to showcase expertise and capture leads through direct engagement."
+                }
+              ]
+            },
+            "aggressive_plan": {
+              "total_budget": 10000.0,
+              "duration_weeks": 12,
+              "channels": [
+                {
+                  "name": "LinkedIn Ads (Hyper-targeted ABM Campaigns)",
+                  "budget_share_percent": 50.0,
+                  "reasoning": "With a limited budget, an aggressive approach on LinkedIn means focusing intensely on Account-Based Marketing (ABM). Target a very specific list of high-value enterprise accounts and key decision-makers within them, using highly personalized ad creatives and aggressive bidding to ensure visibility and direct lead capture from the most promising prospects."
+                },
+                {
+                  "name": "Account-Based Marketing (Personalized Outreach)",
+                  "budget_share_percent": 25.0,
+                  "reasoning": "This channel complements LinkedIn ABM by enabling direct, personalized outreach to identified target accounts. This includes crafting highly customized email sequences and direct LinkedIn messages, utilizing sales enablement tools for efficiency, and focusing on one-to-one engagement to accelerate the sales cycle for enterprise leads."
+                },
+                {
+                  "name": "Paid Search (High-Intent Long-Tail Keywords)",
+                  "budget_share_percent": 15.0,
+                  "reasoning": "To maximize immediate impact, this focuses on paid search (Google Ads) for ultra-specific, high-intent long-tail keywords. These keywords indicate a user is actively searching for a solution to a very particular problem that TechStart SaaS solves, leading to higher conversion rates and minimizing wasted ad spend on broader terms."
+                },
+                {
+                  "name": "Retargeting Campaigns (Website Visitors & Engagers)",
+                  "budget_share_percent": 10.0,
+                  "reasoning": "An aggressive strategy ensures no potential lead is left behind. This budget is dedicated to retargeting website visitors, content downloaders, and LinkedIn ad engagers who have shown interest but haven't converted. These campaigns maintain brand presence and drive higher conversion rates from an already engaged audience."
+                }
+              ]
+            },
+            "experimental_plan": {
+              "total_budget": 10000.0,
+              "duration_weeks": 12,
+              "channels": [
+                {
+                  "name": "Thought Leader Partnerships (Micro-Influencers/Guest Content)",
+                  "budget_share_percent": 40.0,
+                  "reasoning": "Instead of costly macro-influencers, this plan leverages micro-influencers or niche industry thought leaders (e.g., consultants, practitioners) who have highly engaged, relevant enterprise audiences on platforms like LinkedIn or industry blogs. This involves co-creating valuable content (e.g., guest posts, joint analyses) to gain credibility and reach within the persona's trusted networks."
+                },
+                {
+                  "name": "Interactive Content & Value Tools (Low-Code/Template-Based)",
+                  "budget_share_percent": 30.0,
+                  "reasoning": "Develop engaging, value-driven interactive content like a 'Digital Transformation Readiness Assessment' or an 'Enterprise Efficiency ROI Calculator' using low-code platforms or advanced templates. These tools provide immediate value to the persona, generate first-party data, and can be shared organically across professional networks, appealing to their data-backed and ROI-focused motivations."
+                },
+                {
+                  "name": "Niche Online Community Building (Executive Forums/Slack Groups)",
+                  "budget_share_percent": 15.0,
+                  "reasoning": "Create and nurture an exclusive, invite-only online community (e.g., a private Slack or Discord group) for 'Enterprise Efficiency Architects.' This fosters peer-to-peer learning, positions TechStart SaaS as a facilitator of industry best practices, and allows for organic lead generation through trust-building and direct interaction within a highly relevant audience."
+                },
+                {
+                  "name": "Micro-Challenge / Innovation Sprint Campaign",
+                  "budget_share_percent": 15.0,
+                  "reasoning": "Launch a targeted 'Enterprise Efficiency Micro-Challenge' where a small group of prospective companies are invited to submit specific operational pain points. TechStart SaaS then offers a virtual 'innovation sprint' demonstrating how its software can solve these, potentially offering a free pilot or expert consultation as a prize. This generates highly relevant case studies, engages prospects directly, and creates buzz."
+                }
+              ]
+            }
+          },
+          "validation_checks": {
+            "standard_has_4_channels": true,
+            "standard_budget_matches": true,
+            "standard_duration_matches": true,
+            "standard_budget_sums_to_100": true,
+            "standard_all_channels_named": true,
+            "standard_all_have_reasoning": true,
+            "aggressive_has_4_channels": true,
+            "aggressive_budget_matches": true,
+            "aggressive_duration_matches": true,
+            "aggressive_budget_sums_to_100": true,
+            "aggressive_all_channels_named": true,
+            "aggressive_all_have_reasoning": true,
+            "experimental_has_4_channels": true,
+            "experimental_budget_matches": true,
+            "experimental_duration_matches": true,
+            "experimental_budget_sums_to_100": true,
+            "experimental_all_channels_named": true,
+            "experimental_all_have_reasoning": true,
+            "scenarios_are_different": true
+          },
+          "score": 1.0,
+          "passed_checks": 19,
+          "total_checks": 19
+        },
+        "creative": {
+          "success": false,
+          "error": "1 validation error for CreativeAssets\nlong_ad_copy\n  String should have at most 500 characters [type=string_too_long, input_value='Is your enterprise strug... competitive advantage.', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/string_too_long",
+          "duration_seconds": 6.204802989959717,
+          "score": 0.0
+        }
+      },
+      "overall_success": false,
+      "error": "CreativeAgent failed"
+    },
+    {
+      "test_id": "test_002",
+      "business_name": "TechStart SaaS",
+      "category": "Technology/SaaS",
+      "overall_success": false,
+      "error": "'total_duration'"
+    },
+    {
+      "test_id": "test_003",
+      "business_name": "Green Valley Yoga",
+      "category": "Health & Wellness",
+      "start_time": 1763272909.859184,
+      "agents": {
+        "persona": {
+          "success": true,
+          "duration_seconds": 5.84,
+          "persona": {
+            "name": "Sage Evergreen",
+            "age_range": "28-42",
+            "interests": [
+              "Yoga",
+              "Mindfulness and Meditation",
+              "Sustainable Living",
+              "Outdoor Activities (hiking, gardening)",
+              "Local Farmers Markets",
+              "Holistic Wellness",
+              "Community Events"
+            ],
+            "platforms": [
+              "Instagram",
+              "Facebook (local groups)",
+              "Yelp/Google Maps",
+              "Pinterest",
+              "Local Wellness Blogs"
+            ],
+            "creative_style": "Organic, serene, community-focused, authentic photography (natural light, diverse bodies), empathetic and encouraging language, focus on mental and physical well-being, connection to nature.",
+            "motivation": "Sage seeks a peaceful sanctuary to de-stress, improve her physical flexibility and strength, and cultivate mental clarity. She values supporting local businesses and wants to join a welcoming, inclusive community that shares her commitment to holistic wellness and mindful living, away from the competitive atmosphere of larger gyms."
+          },
+          "validation_checks": {
+            "has_name": true,
+            "has_age_range": true,
+            "has_interests": true,
+            "has_platforms": true,
+            "has_creative_style": true,
+            "has_motivation": true,
+            "age_range_reasonable": false,
+            "platforms_relevant": true
+          },
+          "score": 0.88,
+          "passed_checks": 7,
+          "total_checks": 8
+        },
+        "competitor": {
+          "success": true,
+          "duration_seconds": 12.87,
+          "competitors_analyzed": 3,
+          "score": 1.0
+        },
+        "planner": {
+          "success": true,
+          "duration_seconds": 25.82,
+          "scenarios": {
+            "standard_plan": {
+              "total_budget": 1500.0,
+              "duration_weeks": 6,
+              "channels": [
+                {
+                  "name": "Local Search Optimization & Ads",
+                  "budget_share_percent": 30.0,
+                  "reasoning": "Essential for local businesses like Green Valley Yoga, targeting high-intent users searching for 'yoga near me' on platforms like Google Maps and Yelp, which Sage Evergreen actively uses. Optimizing Google My Business and running local search ads ensures visibility at the moment of decision."
+                },
+                {
+                  "name": "Geo-targeted Social Media Ads (Facebook & Instagram)",
+                  "budget_share_percent": 40.0,
+                  "reasoning": "Facebook and Instagram are primary platforms for Sage Evergreen. Geo-targeting allows reaching individuals in Portland with serene, community-focused visuals and messaging that aligns with Green Valley Yoga's brand and Sage's motivations, driving traffic and awareness efficiently."
+                },
+                {
+                  "name": "Email Marketing",
+                  "budget_share_percent": 10.0,
+                  "reasoning": "A cost-effective channel for nurturing leads collected from the website or studio visits, retaining existing members, and communicating class schedules, workshops, and community events. It builds a direct relationship, reinforcing the sense of a welcoming community."
+                },
+                {
+                  "name": "Local Community Partnerships & Events",
+                  "budget_share_percent": 20.0,
+                  "reasoning": "Directly aligns with Sage's interest in local community events, farmers markets, and supporting local businesses. Partnering with other local wellness businesses or participating in community events helps build brand awareness, fosters community ties, and provides authentic engagement opportunities."
+                }
+              ]
+            },
+            "aggressive_plan": {
+              "total_budget": 1500.0,
+              "duration_weeks": 6,
+              "channels": [
+                {
+                  "name": "High-Impact Social Media Advertising (Facebook, Instagram, Pinterest)",
+                  "budget_share_percent": 45.0,
+                  "reasoning": "Maximize reach and impact on Sage's key visual platforms. This involves aggressive bidding, extensive A/B testing of creatives, compelling limited-time offers (e.g., free introductory classes), and sophisticated retargeting campaigns to convert high-intent prospects quickly."
+                },
+                {
+                  "name": "Paid Search Domination (Google Ads)",
+                  "budget_share_percent": 30.0,
+                  "reasoning": "Aggressively target a broad range of keywords including 'yoga Portland,' specific class types, and even competitor brand names (e.g., 'CorePower Yoga alternatives Portland'). High bidding ensures top placement, capturing demand from users actively searching for yoga studios and diverting attention from competitors."
+                },
+                {
+                  "name": "Hyper-Local Digital Display & Geofencing",
+                  "budget_share_percent": 15.0,
+                  "reasoning": "Employ geofencing technology to serve targeted mobile display ads to individuals physically present near competitor studios (CorePower Yoga, LA Fitness) or high-traffic wellness zones in Portland. This directly intercepts potential members and positions Green Valley Yoga as a compelling alternative."
+                },
+                {
+                  "name": "Accelerated Local PR & Media Outreach",
+                  "budget_share_percent": 10.0,
+                  "reasoning": "Proactive and aggressive pitching to local news outlets, prominent Portland wellness blogs (as used by Sage), and community publications for feature stories or interviews. The goal is rapid brand awareness and credibility through earned media, highlighting Green Valley Yoga's unique offerings and community focus."
+                }
+              ]
+            },
+            "experimental_plan": {
+              "total_budget": 1500.0,
+              "duration_weeks": 6,
+              "channels": [
+                {
+                  "name": "Local Micro-Influencer & Community Collaborations",
+                  "budget_share_percent": 35.0,
+                  "reasoning": "Partner with authentic local micro-influencers in the wellness, sustainable living, or outdoor activities niches that align with Sage's interests. This involves paid posts, sponsored stories, and joint events to leverage their credibility and reach highly engaged, niche audiences in Portland, fostering trust and community connection."
+                },
+                {
+                  "name": "Unique Pop-Up Yoga Experiences & Themed Workshops",
+                  "budget_share_percent": 30.0,
+                  "reasoning": "Organize creative, buzz-worthy pop-up yoga classes in unique Portland locations (e.g., local parks, art galleries, rooftop venues) or offer highly specialized workshops (e.g., sound bath integration, yoga for hikers). These events generate PR, user-generated content, and create memorable, 'Instagrammable' experiences that align with Sage's desire for connection to nature and community."
+                },
+                {
+                  "name": "Interactive Digital Content & Challenges",
+                  "budget_share_percent": 20.0,
+                  "reasoning": "Develop and promote engaging online content such as a '7-Day Mindfulness Challenge' or 'Sustainable Living & Yoga Tips' series. This could involve live-streamed classes, guided meditations, or collaborations with local sustainable brands, fostering an online community, generating leads, and positioning Green Valley Yoga as a holistic wellness hub."
+                },
+                {
+                  "name": "Pinterest Marketing (Organic & Paid for Visual Storytelling)",
+                  "budget_share_percent": 15.0,
+                  "reasoning": "Leverage Pinterest, a platform Sage uses, for highly visual and inspirational content. Create boards showcasing serene studio aesthetics, yoga poses, healthy recipes, and mindful living tips. Utilize paid Pinterest ads to promote studio offerings, workshops, and challenges to users interested in holistic wellness, sustainable living, and yoga, driving traffic and building brand affinity."
+                }
+              ]
+            }
+          },
+          "validation_checks": {
+            "standard_has_4_channels": true,
+            "standard_budget_matches": true,
+            "standard_duration_matches": true,
+            "standard_budget_sums_to_100": true,
+            "standard_all_channels_named": true,
+            "standard_all_have_reasoning": true,
+            "aggressive_has_4_channels": true,
+            "aggressive_budget_matches": true,
+            "aggressive_duration_matches": true,
+            "aggressive_budget_sums_to_100": true,
+            "aggressive_all_channels_named": true,
+            "aggressive_all_have_reasoning": true,
+            "experimental_has_4_channels": true,
+            "experimental_budget_matches": true,
+            "experimental_duration_matches": true,
+            "experimental_budget_sums_to_100": true,
+            "experimental_all_channels_named": true,
+            "experimental_all_have_reasoning": true,
+            "scenarios_are_different": true
+          },
+          "score": 1.0,
+          "passed_checks": 19,
+          "total_checks": 19
+        },
+        "creative": {
+          "success": false,
+          "error": "1 validation error for CreativeAssets\nlong_ad_copy\n  String should have at most 500 characters [type=string_too_long, input_value='Feeling overwhelmed by t.... Find your peace here.', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/string_too_long",
+          "duration_seconds": 7.554229021072388,
+          "score": 0.0
+        }
+      },
+      "overall_success": false,
+      "error": "CreativeAgent failed"
+    },
+    {
+      "test_id": "test_003",
+      "business_name": "Green Valley Yoga",
+      "category": "Health & Wellness",
+      "overall_success": false,
+      "error": "'total_duration'"
+    },
+    {
+      "test_id": "test_004",
+      "business_name": "Urban Threads Boutique",
+      "category": "Retail/Fashion",
+      "start_time": 1763272961.938545,
+      "agents": {
+        "persona": {
+          "success": true,
+          "duration_seconds": 5.77,
+          "persona": {
+            "name": "The Curated City Dweller",
+            "age_range": "25-34",
+            "interests": [
+              "Sustainable fashion",
+              "Unique local boutiques",
+              "Art and culture events",
+              "Brunch and coffee shops",
+              "Street style photography",
+              "Travel and exploration"
+            ],
+            "platforms": [
+              "Instagram",
+              "Pinterest",
+              "TikTok",
+              "Local lifestyle blogs/newsletters"
+            ],
+            "creative_style": "Authentic street style photography, curated outfit flatlays, 'day in the life' vlogs showcasing versatile pieces, highlighting unique details and ethical sourcing.",
+            "motivation": "To express her individuality through a unique, high-quality wardrobe that stands out from fast fashion, while supporting local businesses and finding pieces that seamlessly transition from work to social events in a dynamic city like New York."
+          },
+          "validation_checks": {
+            "has_name": true,
+            "has_age_range": true,
+            "has_interests": true,
+            "has_platforms": true,
+            "has_creative_style": true,
+            "has_motivation": true,
+            "age_range_reasonable": false,
+            "platforms_relevant": true
+          },
+          "score": 0.88,
+          "passed_checks": 7,
+          "total_checks": 8
+        },
+        "competitor": {
+          "success": true,
+          "duration_seconds": 12.25,
+          "competitors_analyzed": 3,
+          "score": 1.0
+        },
+        "planner": {
+          "success": true,
+          "duration_seconds": 15.74,
+          "scenarios": {
+            "standard_plan": {
+              "total_budget": 5000.0,
+              "duration_weeks": 10,
+              "channels": [
+                {
+                  "name": "Instagram Ads (Paid Social)",
+                  "budget_share_percent": 40.0,
+                  "reasoning": "Instagram is a primary platform for the 'Curated City Dweller' persona and essential for visual fashion marketing. Geo-targeting will drive both online sales and in-store visits in NYC."
+                },
+                {
+                  "name": "Google Local Search & GMB Optimization",
+                  "budget_share_percent": 30.0,
+                  "reasoning": "Crucial for local discovery, helping the persona find 'unique local boutiques.' Optimizes visibility for in-store traffic and local online searches, directly addressing the business's local nature."
+                },
+                {
+                  "name": "Email Marketing (Newsletter)",
+                  "budget_share_percent": 15.0,
+                  "reasoning": "A cost-effective channel for customer retention, promoting new arrivals, sales, and events. Builds loyalty and encourages repeat purchases, aligning with the persona's motivation for high-quality, unique pieces."
+                },
+                {
+                  "name": "Pinterest Ads",
+                  "budget_share_percent": 15.0,
+                  "reasoning": "Pinterest is a key discovery platform for the persona, ideal for showcasing curated outfit ideas and sustainable fashion inspiration. Drives traffic to product pages with high purchase intent."
+                }
+              ]
+            },
+            "aggressive_plan": {
+              "total_budget": 5000.0,
+              "duration_weeks": 10,
+              "channels": [
+                {
+                  "name": "Instagram & TikTok Paid Social",
+                  "budget_share_percent": 45.0,
+                  "reasoning": "Maximize rapid brand awareness and sales by aggressively targeting the persona on their dominant visual platforms with diverse, high-impact video and image ads, leveraging trends and shoppable features."
+                },
+                {
+                  "name": "Paid Search (Google Shopping & Text Ads)",
+                  "budget_share_percent": 30.0,
+                  "reasoning": "Capture high-intent searches (e.g., 'sustainable fashion NYC', 'unique boutiques') with aggressive bidding, driving direct online sales and connecting with users actively looking to purchase."
+                },
+                {
+                  "name": "Local Lifestyle Blog/Media Partnerships",
+                  "budget_share_percent": 15.0,
+                  "reasoning": "Rapidly build local trust and credibility by securing sponsored content or features on NYC lifestyle blogs and newsletters, directly reaching the persona's trusted local information sources."
+                },
+                {
+                  "name": "Cross-Platform Retargeting Ads",
+                  "budget_share_percent": 10.0,
+                  "reasoning": "Aggressively re-engage users who have shown interest (website visitors, social engagers) with tailored ads and offers across various platforms to drive immediate conversions and minimize abandoned carts."
+                }
+              ]
+            },
+            "experimental_plan": {
+              "total_budget": 5000.0,
+              "duration_weeks": 10,
+              "channels": [
+                {
+                  "name": "NYC Micro-Influencer Collaborations",
+                  "budget_share_percent": 40.0,
+                  "reasoning": "Leverage authentic content creators in NYC whose personal style and values align with sustainable fashion and local businesses, resonating deeply with the persona's desire for individuality and ethical sourcing."
+                },
+                {
+                  "name": "Experiential In-Store Events & Local Collaborations",
+                  "budget_share_percent": 30.0,
+                  "reasoning": "Host unique events (e.g., styling workshops, pop-ups with local artists, 'brunch & shop') to generate buzz, user-generated content, drive in-store traffic, and foster a strong community connection."
+                },
+                {
+                  "name": "User-Generated Content (UGC) Campaigns",
+                  "budget_share_percent": 20.0,
+                  "reasoning": "Encourage customers to share their 'Urban Threads' style with specific hashtags, building social proof, fostering community, and generating organic reach that feels authentic and trustworthy to the persona."
+                },
+                {
+                  "name": "Pinterest Idea Pins & Organic Strategy",
+                  "budget_share_percent": 10.0,
+                  "reasoning": "Focus on rich, visual storytelling through Pinterest Idea Pins showcasing sustainable practices, styling versatility, and behind-the-scenes content, building long-term brand affinity and discovery for the curated persona."
+                }
+              ]
+            }
+          },
+          "validation_checks": {
+            "standard_has_4_channels": true,
+            "standard_budget_matches": true,
+            "standard_duration_matches": true,
+            "standard_budget_sums_to_100": true,
+            "standard_all_channels_named": true,
+            "standard_all_have_reasoning": true,
+            "aggressive_has_4_channels": true,
+            "aggressive_budget_matches": true,
+            "aggressive_duration_matches": true,
+            "aggressive_budget_sums_to_100": true,
+            "aggressive_all_channels_named": true,
+            "aggressive_all_have_reasoning": true,
+            "experimental_has_4_channels": true,
+            "experimental_budget_matches": true,
+            "experimental_duration_matches": true,
+            "experimental_budget_sums_to_100": true,
+            "experimental_all_channels_named": true,
+            "experimental_all_have_reasoning": true,
+            "scenarios_are_different": true
+          },
+          "score": 1.0,
+          "passed_checks": 19,
+          "total_checks": 19
+        },
+        "creative": {
+          "success": true,
+          "duration_seconds": 7.14,
+          "creatives": {
+            "ideas": [
+              {
+                "title": "NYC Style Stories",
+                "description": "Showcase our versatile pieces through authentic street style photography featuring real New Yorkers navigating their day. Highlight how Urban Threads outfits seamlessly transition from a gallery opening to a coffee shop meet-up, emphasizing unique style and functionality for the city's dynamic pace."
+              },
+              {
+                "title": "The Curated Wardrobe: Behind the Seams",
+                "description": "Create a series of short videos or carousels detailing the ethical sourcing, quality craftsmanship, and sustainable practices behind select garments. Connect the story of each piece to its journey and impact, resonating with our persona's desire for conscious consumption and unique, high-quality fashion."
+              },
+              {
+                "title": "Boutique Brunch & Browse",
+                "description": "Host exclusive in-store events or collaborate with local NYC brunch/coffee spots. Offer a 'curated look' styling session paired with a complimentary local treat, encouraging both online and in-person engagement while fostering a community around unique fashion and local culture."
+              }
+            ],
+            "hashtags": [
+              "#UrbanThreadsNYC",
+              "#NYCFashion",
+              "#StreetStyleNYC",
+              "#SustainableStyle",
+              "#ShopLocalNYC",
+              "#BoutiqueFinds",
+              "#CuratedFashion",
+              "#EthicalChic",
+              "#UrbanThreadsBoutique",
+              "#NYCStyle"
+            ],
+            "slogans": [
+              "Your Style, Uniquely NYC.",
+              "Curated Fashion for the Conscious City Dweller.",
+              "Elevate Your Everyday, Responsibly."
+            ],
+            "short_ad_copy": "Discover your unique NYC style. Urban Threads offers curated, sustainable fashion for the modern city dweller. Shop now!",
+            "long_ad_copy": "Tired of fast fashion? Urban Threads Boutique offers unique, high-quality pieces that tell your story. Express your individuality with a thoughtfully curated wardrobe designed for the dynamic rhythm of New York. From art events to brunch, our sustainable selections seamlessly transition with you. Support local, embrace ethical style, and find those stand-out pieces you've been searching for. Elevate your look, responsibly.",
+            "cta_options": [
+              "Shop New Arrivals",
+              "Visit Our NYC Boutique",
+              "Discover Your Style"
+            ]
+          },
+          "validation_checks": {
+            "has_3_ideas": true,
+            "ideas_have_titles": true,
+            "ideas_have_descriptions": true,
+            "has_10_hashtags": true,
+            "has_3_slogans": true,
+            "short_copy_length": true,
+            "long_copy_length": true,
+            "has_3_ctas": true,
+            "no_empty_fields": true
+          },
+          "score": 1.0,
+          "passed_checks": 9,
+          "total_checks": 9
+        },
+        "performance": {
+          "success": true,
+          "duration_seconds": 27.57,
+          "score": 1.0
+        },
+        "critic": {
+          "success": false,
+          "error": "'dict' object has no attribute 'ideas'",
+          "duration_seconds": 5.888938903808594e-05,
+          "score": 0.0
+        }
+      },
+      "total_duration": 68.47,
+      "overall_success": false,
+      "average_agent_score": 0.81,
+      "critic_overall_score": 0,
+      "meets_minimum_score": false
+    },
+    {
+      "test_id": "test_005",
+      "business_name": "Peak Performance Gym",
+      "category": "Fitness",
+      "start_time": 1763273030.411675,
+      "agents": {
+        "persona": {
+          "success": true,
+          "duration_seconds": 6.46,
+          "persona": {
+            "name": "Summit Sarah",
+            "age_range": "28-38",
+            "interests": [
+              "Trail running",
+              "Hiking",
+              "Skiing",
+              "Cycling",
+              "Strength training",
+              "Functional fitness",
+              "Nutrition and meal prep",
+              "Personal growth and challenging herself",
+              "Local community events"
+            ],
+            "platforms": [
+              "Instagram",
+              "Strava",
+              "Facebook",
+              "YouTube"
+            ],
+            "creative_style": "Inspirational & Aspirational: Showcasing strong, active individuals achieving goals and enjoying the Denver lifestyle. Action-Oriented & Dynamic: High-quality videos and photos of people working out, hiking, running, skiing. Educational & Informative: Tips on form, nutrition, recovery, and how fitness supports outdoor pursuits. Community-Focused: Highlighting group classes, challenges, and the camaraderie among members.",
+            "motivation": "To enhance her performance in outdoor sports (hiking, skiing, trail running) and maintain a strong, healthy body capable of handling Denver's active lifestyle. To find a supportive community that shares her passion for fitness and the outdoors, and to receive expert guidance and personalized training to push past plateaus and prevent injuries, ultimately feeling confident and energized."
+          },
+          "validation_checks": {
+            "has_name": true,
+            "has_age_range": true,
+            "has_interests": true,
+            "has_platforms": true,
+            "has_creative_style": true,
+            "has_motivation": true,
+            "age_range_reasonable": false,
+            "platforms_relevant": true
+          },
+          "score": 0.88,
+          "passed_checks": 7,
+          "total_checks": 8
+        },
+        "competitor": {
+          "success": true,
+          "duration_seconds": 15.44,
+          "competitors_analyzed": 3,
+          "score": 1.0
+        },
+        "planner": {
+          "success": true,
+          "duration_seconds": 17.08,
+          "scenarios": {
+            "standard_plan": {
+              "total_budget": 7000.0,
+              "duration_weeks": 8,
+              "channels": [
+                {
+                  "name": "Social Media Ads (Instagram & Facebook)",
+                  "budget_share_percent": 35.0,
+                  "reasoning": "Summit Sarah actively uses Instagram and Facebook. These platforms allow for precise demographic and interest-based targeting (e.g., trail running, hiking, fitness in Denver) with visual, action-oriented content that aligns with her creative style, driving brand awareness and direct lead generation."
+                },
+                {
+                  "name": "Google Search Ads (Local)",
+                  "budget_share_percent": 30.0,
+                  "reasoning": "Captures high-intent users actively searching for gyms, personal trainers, or fitness classes in Denver. Essential for local businesses to appear at the top of search results when potential members are ready to make a decision, directly addressing the 'increase memberships' goal."
+                },
+                {
+                  "name": "Local Event Sponsorships & Partnerships",
+                  "budget_share_percent": 20.0,
+                  "reasoning": "Summit Sarah is interested in local community events and outdoor activities. Sponsoring or partnering with local running races, hiking groups, outdoor festivals, or community fitness challenges directly engages the target persona where they are active, building community goodwill and brand visibility."
+                },
+                {
+                  "name": "Content Marketing (Blog & YouTube)",
+                  "budget_share_percent": 15.0,
+                  "reasoning": "Provides educational and inspirational content (e.g., 'Best stretches for trail runners,' 'Nutrition for high-altitude training,' 'Functional fitness for skiers') that resonates with Sarah's motivation for performance enhancement. This builds authority, attracts organic traffic, and nurtures leads over time, aligning with her use of YouTube for information."
+                }
+              ]
+            },
+            "aggressive_plan": {
+              "total_budget": 7000.0,
+              "duration_weeks": 8,
+              "channels": [
+                {
+                  "name": "High-Volume Social Media Ads (Instagram & Facebook)",
+                  "budget_share_percent": 40.0,
+                  "reasoning": "Maximizes reach and frequency on Summit Sarah's primary social platforms. This includes aggressive retargeting campaigns for website visitors and engagement with lookalike audiences, aiming for maximum impact and lead generation through dynamic, high-quality video and image ads."
+                },
+                {
+                  "name": "Google Search & Display Network Ads",
+                  "budget_share_percent": 25.0,
+                  "reasoning": "Beyond search intent, this expands to the Google Display Network to increase brand awareness across relevant websites and apps that Summit Sarah might visit. This provides broad visibility and allows for visual ads that showcase the gym's aspirational and action-oriented creative style."
+                },
+                {
+                  "name": "YouTube Video Ads",
+                  "budget_share_percent": 20.0,
+                  "reasoning": "Leverages YouTube, a key platform for Summit Sarah, with compelling pre-roll, in-stream, or bumper ads. Focus on showcasing the gym's dynamic workouts, expert trainers, and community, directly targeting users interested in fitness, outdoor sports, and performance enhancement."
+                },
+                {
+                  "name": "Local Fitness & Outdoor Influencer Collaborations",
+                  "budget_share_percent": 15.0,
+                  "reasoning": "Partners with established local fitness and outdoor influencers in Denver who have an authentic following among individuals like Summit Sarah. This provides trusted endorsements and direct exposure to a highly engaged audience, leveraging social proof for rapid membership growth."
+                }
+              ]
+            },
+            "experimental_plan": {
+              "total_budget": 7000.0,
+              "duration_weeks": 8,
+              "channels": [
+                {
+                  "name": "Strategic Local Micro-Influencer & Community Collaborations",
+                  "budget_share_percent": 30.0,
+                  "reasoning": "Focuses on deeper, more authentic partnerships with hyper-local micro-influencers, running clubs, hiking groups, or wellness community leaders on platforms like Instagram and Strava. This builds genuine connections and word-of-mouth within Summit Sarah's specific interest groups, emphasizing the community aspect."
+                },
+                {
+                  "name": "Interactive Online Challenges & UGC Campaigns",
+                  "budget_share_percent": 25.0,
+                  "reasoning": "Launches a 'Denver Peak Performance Challenge' on social media and Strava, encouraging members and prospects to participate, share their progress with a unique hashtag, and generate user-generated content. This fosters community, creates viral potential, and offers prizes, aligning with Sarah's motivation for personal growth."
+                },
+                {
+                  "name": "Pop-Up Outdoor Fitness Experiences & Workshops",
+                  "budget_share_percent": 25.0,
+                  "reasoning": "Organizes unique, branded outdoor fitness classes or workshops in iconic Denver locations (e.g., parks, trailheads). This creates buzz, offers a memorable brand experience, generates high-quality content for social media, and directly appeals to Summit Sarah's love for outdoor integration and functional fitness."
+                },
+                {
+                  "name": "Strava Club & Paid Promotions",
+                  "budget_share_percent": 20.0,
+                  "reasoning": "Creates and actively promotes an official 'Peak Performance Gym' Strava club with exclusive challenges, leaderboards, and group runs/rides. Utilizes Strava's platform features and potentially paid promotions (if available) to directly engage with Summit Sarah on a platform central to her outdoor and performance tracking interests, fostering a strong digital community."
+                }
+              ]
+            }
+          },
+          "validation_checks": {
+            "standard_has_4_channels": true,
+            "standard_budget_matches": false,
+            "standard_duration_matches": true,
+            "standard_budget_sums_to_100": true,
+            "standard_all_channels_named": true,
+            "standard_all_have_reasoning": true,
+            "aggressive_has_4_channels": true,
+            "aggressive_budget_matches": false,
+            "aggressive_duration_matches": true,
+            "aggressive_budget_sums_to_100": true,
+            "aggressive_all_channels_named": true,
+            "aggressive_all_have_reasoning": true,
+            "experimental_has_4_channels": true,
+            "experimental_budget_matches": false,
+            "experimental_duration_matches": true,
+            "experimental_budget_sums_to_100": true,
+            "experimental_all_channels_named": true,
+            "experimental_all_have_reasoning": true,
+            "scenarios_are_different": true
+          },
+          "score": 0.84,
+          "passed_checks": 16,
+          "total_checks": 19
+        },
+        "creative": {
+          "success": false,
+          "error": "1 validation error for CreativeAssets\nlong_ad_copy\n  String should have at most 500 characters [type=string_too_long, input_value=\"Dreaming of conquering m...Denver throws your way.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/string_too_long",
+          "duration_seconds": 7.1770570278167725,
+          "score": 0.0
+        }
+      },
+      "overall_success": false,
+      "error": "CreativeAgent failed"
+    },
+    {
+      "test_id": "test_005",
+      "business_name": "Peak Performance Gym",
+      "category": "Fitness",
+      "overall_success": false,
+      "error": "'total_duration'"
+    }
+  ],
+  "summary": {
+    "total_tests": 9,
+    "successful_tests": 0,
+    "failed_tests": 9,
+    "average_duration": 0,
+    "average_agent_score": 0,
+    "average_critic_score": 0,
+    "tests_meeting_min_score": 0,
+    "agent_performance": {},
+    "category_performance": {},
+    "duration_stats": {
+      "min": Infinity,
+      "max": 0,
+      "total": 0
+    }
+  }
+}

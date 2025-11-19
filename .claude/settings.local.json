@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3:*)",
+      "Bash(timeout 30 python3 test_mcp_direct.py)",
+      "Bash(pytest:*)",
+      "Bash(source:*)",
+      "Bash(pip install:*)",
+      "Bash(playwright install chromium)",
+      "Bash(./run.sh:*)",
+      "Bash(lsof:*)",
+      "Bash(xargs kill:*)",
+      "Bash(curl:*)",
+      "Bash(./run_tests.sh:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

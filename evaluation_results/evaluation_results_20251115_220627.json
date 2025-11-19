@@ -1,0 +1,199 @@
+{
+  "evaluation_run": {
+    "timestamp": "2025-11-15T22:05:43.464002",
+    "total_tests": 1,
+    "gemini_model": "gemini-2.5-flash"
+  },
+  "test_results": [
+    {
+      "test_id": "test_001",
+      "business_name": "Joe's Coffee Shop",
+      "category": "Food & Beverage",
+      "start_time": 1763273143.4640262,
+      "agents": {
+        "persona": {
+          "success": true,
+          "duration_seconds": 5.82,
+          "persona": {
+            "name": "The Neighborhood Explorer",
+            "age_range": "28-40",
+            "interests": [
+              "Supporting local businesses",
+              "Discovering unique cafes and eateries",
+              "Artisanal coffee and craft beverages",
+              "Community events and local culture",
+              "Sustainability and ethical sourcing",
+              "Comfortable spaces for remote work or casual meetups",
+              "Exploring San Francisco's diverse neighborhoods"
+            ],
+            "platforms": [
+              "Instagram",
+              "Yelp",
+              "Google Maps",
+              "Local San Francisco blogs/food guides",
+              "TikTok",
+              "Facebook Groups (local community)"
+            ],
+            "creative_style": "Authentic and inviting visuals (e.g., warm interior shots, latte art, smiling baristas). Storytelling about coffee origins, local partnerships, and community involvement. Highlighting unique menu items and seasonal specials. Engaging content that encourages user-generated photos and reviews. Focus on the cozy atmosphere and the 'local gem' appeal.",
+            "motivation": "To find an authentic, high-quality coffee experience away from large corporate chains. To support local businesses and feel connected to the San Francisco community. To discover a comfortable and inspiring third space for work, relaxation, or meeting friends. To enjoy ethically sourced, well-crafted beverages and unique treats."
+          },
+          "validation_checks": {
+            "has_name": true,
+            "has_age_range": true,
+            "has_interests": true,
+            "has_platforms": true,
+            "has_creative_style": true,
+            "has_motivation": true,
+            "age_range_reasonable": false,
+            "platforms_relevant": true
+          },
+          "score": 0.88,
+          "passed_checks": 7,
+          "total_checks": 8
+        },
+        "competitor": {
+          "success": true,
+          "duration_seconds": 10.64,
+          "competitors_analyzed": 2,
+          "score": 1.0
+        },
+        "planner": {
+          "success": true,
+          "duration_seconds": 20.15,
+          "scenarios": {
+            "standard_plan": {
+              "total_budget": 2500.0,
+              "duration_weeks": 8,
+              "channels": [
+                {
+                  "name": "Google My Business & Maps Ads",
+                  "budget_share_percent": 30.0,
+                  "reasoning": "Essential for local discovery and high-intent searches. 'The Neighborhood Explorer' persona actively uses Google Maps to find local businesses, making strong visibility here crucial for driving foot traffic."
+                },
+                {
+                  "name": "Yelp Advertising & Enhanced Profile",
+                  "budget_share_percent": 25.0,
+                  "reasoning": "Yelp is a dominant platform for local food discovery in San Francisco, heavily utilized by the target persona. Advertising boosts visibility, allows for review management, and highlights unique offerings, addressing the 'discovering unique cafes' motivation."
+                },
+                {
+                  "name": "Instagram Ads (Geo-targeted)",
+                  "budget_share_percent": 30.0,
+                  "reasoning": "Instagram is a primary platform for 'The Neighborhood Explorer' and is highly visual, perfect for showcasing Joe's Coffee Shop's authentic atmosphere, latte art, and unique menu items. Geo-targeting ensures ads reach locals interested in artisanal coffee and community."
+                },
+                {
+                  "name": "Local Facebook Ads & Community Groups",
+                  "budget_share_percent": 15.0,
+                  "reasoning": "Leveraging Facebook for geo-targeted ads and engaging with local community groups (a persona platform) allows for direct communication with neighborhood residents, promoting events, and fostering a sense of local connection."
+                }
+              ]
+            },
+            "aggressive_plan": {
+              "total_budget": 2500.0,
+              "duration_weeks": 8,
+              "channels": [
+                {
+                  "name": "Google Ads (High Bid Search & Maps)",
+                  "budget_share_percent": 35.0,
+                  "reasoning": "An aggressive strategy to dominate local search results for keywords like 'coffee shop San Francisco' and 'best cafe near me'. This maximizes immediate visibility for high-intent customers actively seeking a coffee experience, capturing market share from competitors."
+                },
+                {
+                  "name": "Instagram & TikTok Ads (High Frequency, Retargeting)",
+                  "budget_share_percent": 30.0,
+                  "reasoning": "Utilizes the strong visual appeal of both platforms to saturate the target persona's feed with compelling visuals and offers. High frequency and retargeting ensure Joe's Coffee Shop stays top-of-mind, driving brand awareness and impulse visits."
+                },
+                {
+                  "name": "Local Micro-Influencer Paid Campaigns",
+                  "budget_share_percent": 20.0,
+                  "reasoning": "Engaging multiple local food and lifestyle micro-influencers who align with the persona's values (supporting local, artisanal coffee) for sponsored content. This rapidly builds trust and generates buzz, leveraging authentic voices to drive immediate foot traffic."
+                },
+                {
+                  "name": "Hyper-Local Guerrilla Marketing & Promotions",
+                  "budget_share_percent": 15.0,
+                  "reasoning": "High-impact, disruptive tactics in the immediate vicinity like branded street teams offering samples, pop-up carts at local events, or strategic flyer drops near competitors. This creates immediate local awareness and excitement, directly targeting the 'Neighborhood Explorer' in their environment."
+                }
+              ]
+            },
+            "experimental_plan": {
+              "total_budget": 2500.0,
+              "duration_weeks": 8,
+              "channels": [
+                {
+                  "name": "Community Collaborations & Experiential Events",
+                  "budget_share_percent": 30.0,
+                  "reasoning": "Focus on creating unique experiences that align with the persona's interest in 'community events and local culture'. This includes hosting local artist showcases, coffee tasting workshops, or collaborating with other local businesses for unique menu items, fostering deep community ties and organic buzz."
+                },
+                {
+                  "name": "User-Generated Content (UGC) Contests & Challenges",
+                  "budget_share_percent": 25.0,
+                  "reasoning": "Initiating creative contests (e.g., 'Latte Art Challenge', 'My Joe's Moment') on Instagram and TikTok with appealing prizes encourages customers to create and share content. This generates authentic, viral-ready promotions, leverages social proof, and directly engages the persona's desire for connection."
+                },
+                {
+                  "name": "Partnerships with Local SF Blogs & Food Guides",
+                  "budget_share_percent": 25.0,
+                  "reasoning": "Cultivating relationships with influential local San Francisco food bloggers and niche online guides (e.g., Eater SF, SFist, neighborhood blogs) for features, reviews, or sponsored content. This taps into trusted local sources that the 'Neighborhood Explorer' persona consults for discovering unique eateries."
+                },
+                {
+                  "name": "Interactive TikTok/Reel Series & Storytelling",
+                  "budget_share_percent": 20.0,
+                  "reasoning": "Develop highly engaging, authentic short-form video content showcasing the 'storytelling about coffee origins, local partnerships' aspect of Joe's. This could include 'behind-the-scenes' looks, barista profiles, or 'day in the life' videos, encouraging shares and building a strong, unique brand identity aligned with the persona's motivations."
+                }
+              ]
+            }
+          },
+          "validation_checks": {
+            "standard_has_4_channels": true,
+            "standard_budget_matches": true,
+            "standard_duration_matches": true,
+            "standard_budget_sums_to_100": true,
+            "standard_all_channels_named": true,
+            "standard_all_have_reasoning": true,
+            "aggressive_has_4_channels": true,
+            "aggressive_budget_matches": true,
+            "aggressive_duration_matches": true,
+            "aggressive_budget_sums_to_100": true,
+            "aggressive_all_channels_named": true,
+            "aggressive_all_have_reasoning": true,
+            "experimental_has_4_channels": true,
+            "experimental_budget_matches": true,
+            "experimental_duration_matches": true,
+            "experimental_budget_sums_to_100": true,
+            "experimental_all_channels_named": true,
+            "experimental_all_have_reasoning": true,
+            "scenarios_are_different": true
+          },
+          "score": 1.0,
+          "passed_checks": 19,
+          "total_checks": 19
+        },
+        "creative": {
+          "success": false,
+          "error": "1 validation error for CreativeAssets\nlong_ad_copy\n  String should have at most 500 characters [type=string_too_long, input_value=\"Tired of the usual? The ...t San Francisco moment.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/string_too_long",
+          "duration_seconds": 7.912757873535156,
+          "score": 0.0
+        }
+      },
+      "overall_success": false,
+      "error": "CreativeAgent failed",
+      "total_duration": 44.52,
+      "average_agent_score": 0.0,
+      "critic_overall_score": 0.0,
+      "meets_minimum_score": false
+    }
+  ],
+  "summary": {
+    "total_tests": 1,
+    "successful_tests": 0,
+    "failed_tests": 1,
+    "average_duration": 0,
+    "average_agent_score": 0,
+    "average_critic_score": 0,
+    "tests_meeting_min_score": 0,
+    "agent_performance": {},
+    "category_performance": {},
+    "duration_stats": {
+      "min": Infinity,
+      "max": 0,
+      "total": 0
+    }
+  }
+}

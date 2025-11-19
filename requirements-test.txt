@@ -1,0 +1,18 @@
+# Testing Dependencies for Smart Ad Planner
+
+# Include base dependencies
+-r requirements-minimal.txt
+
+# Testing frameworks
+pytest==7.4.3
+pytest-asyncio==0.21.1
+pytest-playwright==0.4.3
+
+# Playwright
+playwright==1.40.0
+
+# Code coverage
+pytest-cov==4.1.0
+
+# Test utilities
+faker==20.1.0

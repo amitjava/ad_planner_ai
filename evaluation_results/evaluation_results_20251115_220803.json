@@ -1,0 +1,261 @@
+{
+  "evaluation_run": {
+    "timestamp": "2025-11-15T22:06:58.415484",
+    "total_tests": 1,
+    "gemini_model": "gemini-2.5-flash"
+  },
+  "test_results": [
+    {
+      "test_id": "test_001",
+      "business_name": "Joe's Coffee Shop",
+      "category": "Food & Beverage",
+      "start_time": 1763273218.4155068,
+      "agents": {
+        "persona": {
+          "success": true,
+          "duration_seconds": 6.94,
+          "persona": {
+            "name": "The SF Freelancer",
+            "age_range": "25-38",
+            "interests": [
+              "Specialty coffee",
+              "Remote work culture",
+              "Local artisan goods",
+              "Cozy atmospheres",
+              "Urban exploration",
+              "Community events",
+              "Productivity tools",
+              "Sustainable living"
+            ],
+            "platforms": [
+              "Instagram",
+              "Yelp",
+              "Google Maps",
+              "LinkedIn",
+              "Local Facebook Groups"
+            ],
+            "creative_style": "Authentic, visually appealing, and community-driven content showcasing comfortable working spaces, unique coffee creations, and local collaborations. Emphasis on warm lighting, inviting corners, and genuine interactions. Use of local hashtags and user-generated content.",
+            "motivation": "To find a reliable, inspiring 'third place' that offers both high-quality coffee and a conducive environment for focused work or relaxed social interactions. They seek a local spot that feels like a community hub, offering a break from corporate chains and a chance to support small businesses."
+          },
+          "validation_checks": {
+            "has_name": true,
+            "has_age_range": true,
+            "has_interests": true,
+            "has_platforms": true,
+            "has_creative_style": true,
+            "has_motivation": true,
+            "age_range_reasonable": false,
+            "platforms_relevant": true
+          },
+          "score": 0.88,
+          "passed_checks": 7,
+          "total_checks": 8
+        },
+        "competitor": {
+          "success": true,
+          "duration_seconds": 10.96,
+          "competitors_analyzed": 2,
+          "score": 1.0
+        },
+        "planner": {
+          "success": true,
+          "duration_seconds": 19.66,
+          "scenarios": {
+            "standard_plan": {
+              "total_budget": 2500.0,
+              "duration_weeks": 8,
+              "channels": [
+                {
+                  "name": "Google My Business & Local SEO",
+                  "budget_share_percent": 30.0,
+                  "reasoning": "Essential for local discoverability. The 'SF Freelancer' persona uses Google Maps to find businesses, and optimizing GMB ensures Joe's Coffee Shop appears prominently in 'coffee shop near me' searches, driving direct foot traffic."
+                },
+                {
+                  "name": "Yelp Optimization & Sponsored Listings",
+                  "budget_share_percent": 25.0,
+                  "reasoning": "Yelp is a critical platform for local businesses in San Francisco, heavily used by the target persona for reviews and recommendations. Optimizing Joe's profile and using sponsored listings ensures visibility and credibility in a competitive market."
+                },
+                {
+                  "name": "Instagram Organic & Paid Posts",
+                  "budget_share_percent": 30.0,
+                  "reasoning": "Instagram is a primary platform for the 'SF Freelancer' and is highly visual, perfect for showcasing 'specialty coffee,' 'cozy atmospheres,' and 'unique coffee creations.' Targeted local ads can reach the persona directly with visually appealing content."
+                },
+                {
+                  "name": "Local Facebook Group Engagement & Event Promotion",
+                  "budget_share_percent": 15.0,
+                  "reasoning": "Directly targets the persona's interest in 'community events' and 'local collaborations.' Engaging in local Facebook groups allows for cost-effective promotion of the shop as a 'community hub' and boosts local brand awareness."
+                }
+              ]
+            },
+            "aggressive_plan": {
+              "total_budget": 2500.0,
+              "duration_weeks": 8,
+              "channels": [
+                {
+                  "name": "Google Local Search Ads (PPC)",
+                  "budget_share_percent": 35.0,
+                  "reasoning": "Aggressively capturing high-intent searchers is crucial. PPC ads ensure Joe's Coffee Shop appears at the top of local search results, maximizing immediate visibility and driving direct foot traffic when customers are actively looking for a coffee shop nearby."
+                },
+                {
+                  "name": "Instagram & Facebook Hyper-Targeted Ads",
+                  "budget_share_percent": 35.0,
+                  "reasoning": "Maximizes reach and impact within the target demographic. Hyper-targeted ads (geo-fencing, interest-based on 'specialty coffee,' 'remote work culture') with compelling offers (e.g., 'first coffee free') can rapidly increase brand awareness and incentivize trial."
+                },
+                {
+                  "name": "Yelp Ads & Enhanced Profile",
+                  "budget_share_percent": 20.0,
+                  "reasoning": "Ensuring dominant placement on Yelp, a key decision-making platform for local SF businesses, is critical. Aggressive ad spend and an enhanced profile will push Joe's above competitors, attracting discerning customers actively seeking a new local spot."
+                },
+                {
+                  "name": "Local Micro-Influencer Campaigns",
+                  "budget_share_percent": 10.0,
+                  "reasoning": "High risk, high return strategy leveraging trusted voices within the local community. Partnering with SF-based food/coffee bloggers or productivity influencers can generate authentic buzz, strong recommendations, and drive immediate interest among the 'SF Freelancer' persona."
+                }
+              ]
+            },
+            "experimental_plan": {
+              "total_budget": 2500.0,
+              "duration_weeks": 8,
+              "channels": [
+                {
+                  "name": "Community Hub Events & Workshops",
+                  "budget_share_percent": 40.0,
+                  "reasoning": "Transforms the shop into a 'community hub' by hosting 'Freelancer Meetups,' 'Latte Art Classes,' or 'Local Artist Showcases.' This generates authentic content, fosters 'genuine interactions,' and creates shareable experiences that align with the persona's motivation for a 'third place' and 'community events'."
+                },
+                {
+                  "name": "Strategic Local Brand Collaborations",
+                  "budget_share_percent": 25.0,
+                  "reasoning": "Partnering with complementary local businesses (e.g., bakeries, bookstores, co-working spaces) for joint promotions or limited-edition products. This leverages each partner's audience, provides unique offerings, and reinforces Joe's commitment to 'local artisan goods' and 'local collaborations'."
+                },
+                {
+                  "name": "User-Generated Content (UGC) Contests & Campaigns",
+                  "budget_share_percent": 20.0,
+                  "reasoning": "Encourages customers to share their experiences using specific hashtags, offering prizes. This taps into the persona's desire for 'authentic' and 'community-driven content,' generating organic reach and social proof through trusted peer recommendations."
+                },
+                {
+                  "name": "TikTok/Instagram Reels Creative & Boost",
+                  "budget_share_percent": 15.0,
+                  "reasoning": "Capitalizes on short-form video trends to showcase 'unique coffee creations,' 'cozy atmospheres,' and 'genuine interactions' in an engaging, viral-friendly format. Focus on 'day in the life' or 'hidden gem' content to attract urban explorers and remote workers with high shareability potential."
+                }
+              ]
+            }
+          },
+          "validation_checks": {
+            "standard_has_4_channels": true,
+            "standard_budget_matches": true,
+            "standard_duration_matches": true,
+            "standard_budget_sums_to_100": true,
+            "standard_all_channels_named": true,
+            "standard_all_have_reasoning": true,
+            "aggressive_has_4_channels": true,
+            "aggressive_budget_matches": true,
+            "aggressive_duration_matches": true,
+            "aggressive_budget_sums_to_100": true,
+            "aggressive_all_channels_named": true,
+            "aggressive_all_have_reasoning": true,
+            "experimental_has_4_channels": true,
+            "experimental_budget_matches": true,
+            "experimental_duration_matches": true,
+            "experimental_budget_sums_to_100": true,
+            "experimental_all_channels_named": true,
+            "experimental_all_have_reasoning": true,
+            "scenarios_are_different": true
+          },
+          "score": 1.0,
+          "passed_checks": 19,
+          "total_checks": 19
+        },
+        "creative": {
+          "success": true,
+          "duration_seconds": 8.39,
+          "creatives": {
+            "ideas": [
+              {
+                "title": "Freelancer Fuel & Focus Mornings",
+                "description": "Launch a campaign highlighting Joe's as the ultimate remote work destination. Offer a 'Productivity Pass' for unlimited drip coffee/tea during morning hours and showcase our robust Wi-Fi, ample power outlets, and quiet zones. Feature testimonials from local freelancers thriving in our space."
+              },
+              {
+                "title": "SF Creative Connect & Coffee",
+                "description": "Host bi-weekly themed networking events for SF freelancers, artists, and entrepreneurs. Each event could feature a local artisan guest speaker or a collaborative challenge, encouraging community building over specialty coffee. Offer a special 'Community Brew' with a portion of sales supporting a local cause."
+              },
+              {
+                "title": "Your Cozy SF Escape: Joe's Daily Recharge",
+                "description": "Create a visually driven campaign showcasing the shop's warm, inviting atmosphere, comfortable seating, and unique coffee creations. Encourage patrons to share their 'Joe's moment' using #MyJoesEscape for a chance to be featured on our social channels and win a monthly coffee subscription."
+              }
+            ],
+            "hashtags": [
+              "#JoesCoffeeSF",
+              "#SanFranciscoCoffee",
+              "#SFFreelancer",
+              "#RemoteWorkFriendly",
+              "#SpecialtyCoffeeSF",
+              "#BayAreaCoffee",
+              "#CoffeeAndCommunity",
+              "#SFlocal",
+              "#WorkFromCoffeeShop",
+              "#ThirdPlaceSF"
+            ],
+            "slogans": [
+              "Joe's: Your SF Hub for Coffee & Community.",
+              "Fuel Your Focus. Find Your Flow. Joe's Coffee.",
+              "Where San Francisco Connects, One Sip at a Time."
+            ],
+            "short_ad_copy": "Escape the ordinary. Find your focus at Joe's Coffee Shop. Premium brews, cozy vibes, strong Wi-Fi. Your SF workspace awaits.",
+            "long_ad_copy": "Tired of working from your kitchen table or noisy corporate chains? Discover Joe's Coffee Shop, your perfect 'third place' in the heart of San Francisco. We've crafted an inviting haven where specialty coffee meets productivity. Sink into a comfy chair, tap into our reliable Wi-Fi, and let the aroma of freshly roasted beans inspire your next big idea.\n\nBeyond the perfect latte, Joe's is a community hub. Connect with fellow creatives, collaborate, or simply enjoy a moment of peace. We source locally, brew with passion, and welcome every SF freelancer seeking quality, comfort, and connection. Come experience the Joe's difference \u2013 where every visit feels like coming home.",
+            "cta_options": [
+              "Visit Joe's Today!",
+              "Find Your Focus: Stop by Joe's!",
+              "Explore Our Menu & Cozy Space!"
+            ]
+          },
+          "validation_checks": {
+            "has_3_ideas": true,
+            "ideas_have_titles": true,
+            "ideas_have_descriptions": true,
+            "has_10_hashtags": true,
+            "has_3_slogans": true,
+            "short_copy_length": true,
+            "long_copy_length": true,
+            "has_3_ctas": true,
+            "no_empty_fields": true
+          },
+          "score": 1.0,
+          "passed_checks": 9,
+          "total_checks": 9
+        },
+        "performance": {
+          "success": true,
+          "duration_seconds": 19.04,
+          "score": 1.0
+        },
+        "critic": {
+          "success": false,
+          "error": "'dict' object has no attribute 'ideas'",
+          "duration_seconds": 5.7220458984375e-05,
+          "score": 0.0
+        }
+      },
+      "total_duration": 65.0,
+      "overall_success": false,
+      "average_agent_score": 0.81,
+      "critic_overall_score": 0,
+      "meets_minimum_score": false
+    }
+  ],
+  "summary": {
+    "total_tests": 1,
+    "successful_tests": 0,
+    "failed_tests": 1,
+    "average_duration": 0,
+    "average_agent_score": 0,
+    "average_critic_score": 0,
+    "tests_meeting_min_score": 0,
+    "agent_performance": {},
+    "category_performance": {},
+    "duration_stats": {
+      "min": Infinity,
+      "max": 0,
+      "total": 0
+    }
+  }
+}

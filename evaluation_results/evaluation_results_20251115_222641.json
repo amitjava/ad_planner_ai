@@ -1,0 +1,1452 @@
+{
+  "evaluation_run": {
+    "timestamp": "2025-11-15T22:18:50.170577",
+    "total_tests": 5,
+    "gemini_model": "gemini-2.5-flash"
+  },
+  "test_results": [
+    {
+      "test_id": "test_001",
+      "business_name": "Joe's Coffee Shop",
+      "category": "Food & Beverage",
+      "start_time": 1763273930.170623,
+      "agents": {
+        "persona": {
+          "success": true,
+          "duration_seconds": 5.81,
+          "persona": {
+            "name": "Chloe the Community Cultivator",
+            "age_range": "28-36",
+            "interests": [
+              "Specialty coffee",
+              "Supporting local businesses",
+              "Community events",
+              "Urban exploration",
+              "Remote work-friendly cafes",
+              "Sustainable living",
+              "Art and design"
+            ],
+            "platforms": [
+              "Instagram",
+              "Yelp",
+              "Google Maps",
+              "Facebook local groups",
+              "Nextdoor"
+            ],
+            "creative_style": "Warm, authentic, and community-focused visuals. Showcasing the unique atmosphere, artisanal coffee process, and local patrons. Highlighting events and neighborhood connections.",
+            "motivation": "To find a welcoming 'third place' that serves high-quality, ethically sourced coffee, supports the local economy, and fosters a sense of community. She seeks a comfortable spot for work, socializing, or simply enjoying a moment of peace away from the bustling city."
+          },
+          "validation_checks": {
+            "has_name": true,
+            "has_age_range": true,
+            "has_interests": true,
+            "has_platforms": true,
+            "has_creative_style": true,
+            "has_motivation": true,
+            "age_range_reasonable": false,
+            "platforms_relevant": true
+          },
+          "score": 0.88,
+          "passed_checks": 7,
+          "total_checks": 8
+        },
+        "competitor": {
+          "success": true,
+          "duration_seconds": 12.18,
+          "competitors_analyzed": 2,
+          "score": 1.0
+        },
+        "planner": {
+          "success": true,
+          "duration_seconds": 18.48,
+          "scenarios": {
+            "standard_plan": {
+              "total_budget": 2500.0,
+              "duration_weeks": 8,
+              "channels": [
+                {
+                  "name": "Google My Business & Local SEO",
+                  "budget_share_percent": 25.0,
+                  "reasoning": "Essential for local search visibility and map discovery, directly targeting users looking for coffee shops nearby in San Francisco. This aligns with Chloe's use of Google Maps to find local businesses and is a foundational channel for driving foot traffic."
+                },
+                {
+                  "name": "Instagram Paid Ads",
+                  "budget_share_percent": 30.0,
+                  "reasoning": "A highly visual platform, perfect for showcasing Joe's Coffee Shop's unique atmosphere, artisanal coffee process, and community vibe. This directly targets Chloe's preferred platform and allows for effective brand awareness and engagement through authentic visuals."
+                },
+                {
+                  "name": "Yelp Advertising & Profile Optimization",
+                  "budget_share_percent": 25.0,
+                  "reasoning": "Crucial for reputation management and discovery in San Francisco, where Yelp usage is high for local business reviews and recommendations. Chloe actively uses Yelp to find and vet local businesses, making this a direct path to reaching her."
+                },
+                {
+                  "name": "Facebook Local Group Engagement & Targeted Ads",
+                  "budget_share_percent": 20.0,
+                  "reasoning": "Connects with Chloe's interest in community and supporting local businesses. Engaging in local Facebook groups and running targeted ads allows for direct outreach to specific SF neighborhoods, fostering a sense of belonging and awareness."
+                }
+              ]
+            },
+            "aggressive_plan": {
+              "total_budget": 2500.0,
+              "duration_weeks": 8,
+              "channels": [
+                {
+                  "name": "Geofencing Mobile Ads",
+                  "budget_share_percent": 30.0,
+                  "reasoning": "Targets potential customers when they are physically near Joe's Coffee Shop or even competitors (like Starbucks or Blue Bottle), delivering highly relevant ads to drive immediate foot traffic. This is a high-impact strategy for local businesses seeking rapid customer acquisition."
+                },
+                {
+                  "name": "High-Frequency Instagram & Facebook Paid Social",
+                  "budget_share_percent": 35.0,
+                  "reasoning": "Maximizes brand visibility and recall among the target demographic through consistent, broad reach. This ensures Joe's Coffee Shop's unique offerings, events, and atmosphere are constantly in front of Chloe and her peers on their primary social platforms."
+                },
+                {
+                  "name": "Hyper-Local Google Search & Maps Ads",
+                  "budget_share_percent": 20.0,
+                  "reasoning": "Aggressively bids on relevant keywords ('best coffee SF', 'remote work cafe near me') and prominent map placements. This strategy aims to outcompete larger chains and ensure Joe's Coffee Shop appears first for high-intent local searches, capturing immediate demand."
+                },
+                {
+                  "name": "Prominent Local Food Blogger/Influencer Collaboration",
+                  "budget_share_percent": 15.0,
+                  "reasoning": "Leverages the credibility and established audience of a well-known local personality or food blogger in San Francisco. This aims to quickly generate significant buzz and awareness, positioning Joe's as a must-visit spot within Chloe's discerning demographic."
+                }
+              ]
+            },
+            "experimental_plan": {
+              "total_budget": 2500.0,
+              "duration_weeks": 8,
+              "channels": [
+                {
+                  "name": "Micro-Influencer & Local Creator Collaborations",
+                  "budget_share_percent": 30.0,
+                  "reasoning": "Focuses on authentic storytelling through smaller, community-aligned creators who resonate deeply with Chloe's values of supporting local and unique experiences. This fosters genuine engagement and builds trust within specific niches in SF."
+                },
+                {
+                  "name": "Community-Led Event Series & Workshops",
+                  "budget_share_percent": 35.0,
+                  "reasoning": "Directly engages Chloe's interest in community events and unique experiences (e.g., coffee tasting workshops, local artist showcases, remote work meetups). This builds Joe's Coffee Shop as a true 'third place' and generates organic word-of-mouth."
+                },
+                {
+                  "name": "User-Generated Content (UGC) Campaigns & Contests",
+                  "budget_share_percent": 20.0,
+                  "reasoning": "Encourages customers to creatively share their experiences on social media (Instagram, TikTok) through themed contests or challenges. This generates organic buzz, authentic testimonials, and builds a vibrant online community around the brand, resonating with Chloe's social nature."
+                },
+                {
+                  "name": "Strategic Hyper-Local Business Partnerships",
+                  "budget_share_percent": 15.0,
+                  "reasoning": "Collaborates with complementary local businesses (e.g., independent bookstore, art gallery, yoga studio) for cross-promotion, co-hosted events, or unique joint offerings. This expands Joe's reach to new, aligned audiences within the local community, appealing to Chloe's support for local businesses."
+                }
+              ]
+            }
+          },
+          "validation_checks": {
+            "standard_has_4_channels": true,
+            "standard_budget_matches": true,
+            "standard_duration_matches": true,
+            "standard_budget_sums_to_100": true,
+            "standard_all_channels_named": true,
+            "standard_all_have_reasoning": true,
+            "aggressive_has_4_channels": true,
+            "aggressive_budget_matches": true,
+            "aggressive_duration_matches": true,
+            "aggressive_budget_sums_to_100": true,
+            "aggressive_all_channels_named": true,
+            "aggressive_all_have_reasoning": true,
+            "experimental_has_4_channels": true,
+            "experimental_budget_matches": true,
+            "experimental_duration_matches": true,
+            "experimental_budget_sums_to_100": true,
+            "experimental_all_channels_named": true,
+            "experimental_all_have_reasoning": true,
+            "scenarios_are_different": true
+          },
+          "score": 1.0,
+          "passed_checks": 19,
+          "total_checks": 19
+        },
+        "creative": {
+          "success": true,
+          "duration_seconds": 9.38,
+          "creatives": {
+            "ideas": [
+              {
+                "title": "Local Brews, Local Views",
+                "description": "Launch a recurring 'Local Spotlight' series featuring San Francisco artists, photographers, or community initiatives. Display their work in the cafe and on social media, creating a vibrant cultural connection. Host a launch event for each new spotlight, inviting the community to engage."
+              },
+              {
+                "title": "Coffee & Connection Events",
+                "description": "Host intimate, community-focused events like 'Coffee & Conversation' meetups, local book club gatherings, or acoustic open mic nights. Promote these on local platforms (Nextdoor, Facebook groups) to invite Chloe and others to connect over specialty coffee in a welcoming, relaxed setting."
+              },
+              {
+                "title": "Your Third Place Story",
+                "description": "Encourage patrons to share their favorite moments and reasons why Joe's Coffee Shop is their chosen 'third place' \u2013 for work, relaxation, or connection. Utilize a unique hashtag for user-generated content, re-sharing authentic stories to build a tapestry of community experiences."
+              }
+            ],
+            "hashtags": [
+              "#JoesCoffeeSF",
+              "#SanFranciscoCoffee",
+              "#SFCommunityCafe",
+              "#SupportLocalSF",
+              "#ThirdPlaceVibes",
+              "#SpecialtyCoffeeSF",
+              "#BayAreaEats",
+              "#CoffeeAndCommunity",
+              "#SustainableSips",
+              "#ExploreSF"
+            ],
+            "slogans": [
+              "Crafted Coffee, Connected Community.",
+              "Joe's Coffee: Your San Francisco Sanctuary.",
+              "More Than Coffee, It's Home."
+            ],
+            "short_ad_copy": "Discover your SF sanctuary. Joe's Coffee: where community brews and conversations flow. Taste the local difference.",
+            "long_ad_copy": "Tired of the city's hustle? Discover your perfect 'third place' at Joe's Coffee Shop in the heart of San Francisco. We believe a great cup of coffee is just the beginning. Our ethically sourced, specialty brews are crafted with passion, designed to fuel your remote work, inspire creative thoughts, or simply offer a moment of peace.\n\nBeyond the beans, Joe's is a vibrant hub for connection. Join our community events, meet fellow locals, and truly feel at home. Support a local business that cares about quality, sustainability, and fostering genuine neighborhood ties. Come for the coffee, stay for the community. We can't wait to welcome you.",
+            "cta_options": [
+              "Visit Us Today!",
+              "Find Your Community Here.",
+              "Brew Your Day at Joe's!"
+            ]
+          },
+          "validation_checks": {
+            "has_3_ideas": true,
+            "ideas_have_titles": true,
+            "ideas_have_descriptions": true,
+            "has_10_hashtags": true,
+            "has_3_slogans": true,
+            "short_copy_length": true,
+            "long_copy_length": true,
+            "has_3_ctas": true,
+            "no_empty_fields": true
+          },
+          "score": 1.0,
+          "passed_checks": 9,
+          "total_checks": 9
+        },
+        "performance": {
+          "success": true,
+          "duration_seconds": 22.62,
+          "score": 1.0
+        },
+        "critic": {
+          "success": true,
+          "duration_seconds": 18.73,
+          "evaluation": {
+            "overall_score": 0.78,
+            "dimension_scores": {
+              "channel_mix": 0.95,
+              "budget_logic": 0.5,
+              "persona_alignment": 0.98,
+              "competitor_differentiation": 0.9,
+              "creative_integration": 0.95,
+              "feasibility": 0.4
+            },
+            "issues": [
+              "The primary and most significant issue is the extremely low budget ($2500 over 8 weeks) for a highly competitive market like San Francisco. This budget severely limits the potential reach, frequency, and impact of all proposed marketing activities.",
+              "Many proposed activities, particularly in the 'AGGRESSIVE' and 'EXPERIMENTAL' plans (e.g., securing 'prominent' influencers, running a 'series' of community events, high-frequency paid social), are unrealistic to execute effectively or achieve meaningful results with the allocated funds.",
+              "Paid ad campaigns across multiple platforms (Instagram, Facebook, Google, Yelp, Geofencing) will struggle to gain significant traction or deliver substantial foot traffic/awareness with such limited daily/weekly spend in a dense urban environment.",
+              "While the ideas are strong, the lack of specific, detailed execution plans for community events and local partnerships, especially under severe budget constraints, makes their success highly uncertain."
+            ],
+            "strengths": [
+              "Exceptional persona alignment: The entire strategy, from channel selection to creative assets and proposed activities, perfectly targets 'Chloe the Community Cultivator' and her motivations.",
+              "Strong competitor differentiation: The strategy effectively leverages the 'third place,' community, and local authenticity angles to stand out against both large chains and other independent coffee shops.",
+              "Highly engaging and authentic creative integration: The creative ideas, slogans, and CTAs are perfectly aligned with the persona's values and the brand's desired image, emphasizing connection and community.",
+              "Diverse and relevant channel mix: The chosen channels across all three plans are highly relevant for local discovery, community engagement, and reaching the target persona on their preferred platforms.",
+              "Innovative 'EXPERIMENTAL' plan: This plan, with its focus on micro-influencers, community events, UGC, and local partnerships, is particularly well-suited to build deep brand loyalty and organic growth within the target community."
+            ],
+            "recommendations": [
+              "**Increase Budget Significantly:** To achieve meaningful impact in San Francisco, the marketing budget needs to be substantially increased. A budget of $2500 over 8 weeks is insufficient for the scope of activities proposed.",
+              "**Prioritize and Focus:** If the budget cannot be increased, drastically reduce the number of channels/activities per plan. Focus on 1-2 core initiatives that can be executed effectively with the limited funds, rather than spreading the budget too thinly.",
+              "**Refine Influencer Strategy:** For the current budget, focus exclusively on genuine micro-influencers or local creators who might be open to product exchange, smaller fees, or collaborative content creation, rather than aiming for 'prominent' influencers.",
+              "**Detailed Event Planning for Low-Cost Execution:** Outline specific, very low-cost community event ideas (e.g., free coffee tastings, local artist showcases, book club meetups) that can be hosted within the cafe space, leveraging existing resources.",
+              "**Emphasize Organic Growth & Community Management:** Given budget constraints, heavily invest time and effort into organic strategies: actively engaging in local Facebook/Nextdoor groups, encouraging reviews, fostering user-generated content organically, and building relationships with local businesses for cross-promotion.",
+              "**Consider a Longer Campaign Duration:** Spreading the $2500 budget over a longer period (e.g., 3-6 months) might allow for more consistent, albeit lower-intensity, activity, especially for community-building and organic efforts, rather than a short, underfunded burst."
+            ]
+          },
+          "validation_checks": {
+            "has_overall_score": true,
+            "score_in_range": true,
+            "has_dimension_scores": true,
+            "has_all_dimensions": true,
+            "has_strengths": true,
+            "has_issues_or_recommendations": true
+          },
+          "score": 1.0,
+          "critic_overall_score": 0.78,
+          "passed_checks": 6,
+          "total_checks": 6
+        }
+      },
+      "total_duration": 87.2,
+      "overall_success": true,
+      "average_agent_score": 0.98,
+      "critic_overall_score": 0.78,
+      "meets_minimum_score": true
+    },
+    {
+      "test_id": "test_002",
+      "business_name": "TechStart SaaS",
+      "category": "Technology/SaaS",
+      "start_time": 1763274017.3703418,
+      "agents": {
+        "persona": {
+          "success": true,
+          "duration_seconds": 5.77,
+          "persona": {
+            "name": "Strategic Systems Sarah",
+            "age_range": "38-52",
+            "interests": [
+              "Business process optimization",
+              "Scalable technology solutions",
+              "Data analytics for business growth",
+              "Team productivity tools",
+              "Digital transformation strategies",
+              "ROI-driven investments"
+            ],
+            "platforms": [
+              "LinkedIn",
+              "G2/Capterra (software review sites)",
+              "Industry-specific webinars & conferences",
+              "CIO.com / TechCrunch (enterprise sections)",
+              "Professional association forums"
+            ],
+            "creative_style": "Data-driven and analytical, prefers case studies, whitepapers, and clear ROI projections. Values professional, concise communication that highlights business value and efficiency gains.",
+            "motivation": "To find and implement enterprise-grade software solutions that can streamline complex business processes, improve cross-departmental collaboration, and provide actionable data insights to drive growth and efficiency within her organization, ultimately contributing to the company's bottom line and her own professional advancement."
+          },
+          "validation_checks": {
+            "has_name": true,
+            "has_age_range": true,
+            "has_interests": true,
+            "has_platforms": true,
+            "has_creative_style": true,
+            "has_motivation": true,
+            "age_range_reasonable": false,
+            "platforms_relevant": true
+          },
+          "score": 0.88,
+          "passed_checks": 7,
+          "total_checks": 8
+        },
+        "competitor": {
+          "success": true,
+          "duration_seconds": 15.46,
+          "competitors_analyzed": 3,
+          "score": 1.0
+        },
+        "planner": {
+          "success": true,
+          "duration_seconds": 18.04,
+          "scenarios": {
+            "standard_plan": {
+              "total_budget": 10000.0,
+              "duration_weeks": 12,
+              "channels": [
+                {
+                  "name": "LinkedIn Ads (Targeted Lead Gen)",
+                  "budget_share_percent": 35.0,
+                  "reasoning": "LinkedIn is the primary professional platform for 'Strategic Systems Sarah', allowing for precise targeting by job title, industry, and company size. This channel is crucial for generating qualified B2B leads through thought leadership content (whitepapers, case studies) and direct solution promotion, aligning with Sarah's data-driven creative style."
+                },
+                {
+                  "name": "Content Marketing & SEO (Gated Assets)",
+                  "budget_share_percent": 30.0,
+                  "reasoning": "Developing high-value content like whitepapers, case studies, and ROI analyses directly addresses Sarah's preference for data-driven, analytical information. Optimizing this content for SEO ensures organic visibility when Sarah searches for solutions, establishing TechStart SaaS as a thought leader and capturing leads through gated content."
+                },
+                {
+                  "name": "Software Review Sites (G2/Capterra Optimization & Ads)",
+                  "budget_share_percent": 20.0,
+                  "reasoning": "These platforms are explicitly mentioned as where Sarah researches software. Investing in profile optimization, actively soliciting reviews, and potentially running targeted ads on these sites ensures TechStart SaaS appears credible and competitive when high-intent buyers are evaluating solutions, providing crucial social proof."
+                },
+                {
+                  "name": "Industry-Specific Publications & Webinars",
+                  "budget_share_percent": 15.0,
+                  "reasoning": "Reaching Sarah through trusted industry sources like CIO.com, TechCrunch (enterprise sections), or sponsored industry webinars/conferences provides a direct path to her attention. This channel leverages her existing consumption habits for professional development and industry insights, positioning TechStart SaaS within relevant conversations."
+                }
+              ]
+            },
+            "aggressive_plan": {
+              "total_budget": 10000.0,
+              "duration_weeks": 12,
+              "channels": [
+                {
+                  "name": "LinkedIn Ads (Maximized Reach & ABM)",
+                  "budget_share_percent": 40.0,
+                  "reasoning": "An aggressive approach on LinkedIn involves significantly increasing ad spend, running multiple campaign types (lead gen, brand awareness, direct response), and implementing account-based marketing (ABM) to target specific enterprise accounts. This maximizes visibility and direct engagement with 'Strategic Systems Sarah' and her peers."
+                },
+                {
+                  "name": "Paid Search (High-Intent Keywords & Competitor Bidding)",
+                  "budget_share_percent": 25.0,
+                  "reasoning": "Aggressive bidding on high-intent keywords ('enterprise SaaS', 'workflow automation software', 'data analytics tools') and even competitor terms (e.g., 'Salesforce alternative') on Google Ads aims to capture users actively searching for solutions. This high-risk, high-reward strategy can quickly generate qualified leads."
+                },
+                {
+                  "name": "Intensive Webinar Series & Virtual Summit Sponsorships",
+                  "budget_share_percent": 20.0,
+                  "reasoning": "Hosting or sponsoring multiple high-profile webinars and virtual summits focused on 'business process optimization' and 'digital transformation strategies' allows for deep engagement with large numbers of 'Strategic Systems Sarah' personas, positioning TechStart SaaS as a leading expert and generating significant lead volume."
+                },
+                {
+                  "name": "Cross-Platform Retargeting & Lookalike Audiences",
+                  "budget_share_percent": 15.0,
+                  "reasoning": "Aggressive retargeting campaigns across LinkedIn, Google Display Network, and other B2B ad networks ensure that anyone who has shown interest (website visit, content download) is consistently re-engaged. Building lookalike audiences based on high-value leads expands reach to similar high-potential prospects, maximizing conversion efficiency."
+                }
+              ]
+            },
+            "experimental_plan": {
+              "total_budget": 10000.0,
+              "duration_weeks": 12,
+              "channels": [
+                {
+                  "name": "B2B Micro-Influencer & Thought Leader Co-creation",
+                  "budget_share_percent": 35.0,
+                  "reasoning": "Partnering with niche B2B micro-influencers or recognized thought leaders (e.g., consultants, industry analysts) on LinkedIn or specialized forums to co-create content (e.g., joint whitepapers, video interviews, 'ask me anything' sessions) leverages their established credibility and reach within Sarah's professional network, offering an authentic, less traditional endorsement."
+                },
+                {
+                  "name": "Interactive ROI Calculators & Assessment Tools",
+                  "budget_share_percent": 25.0,
+                  "reasoning": "Developing highly interactive, data-driven tools (e.g., 'Enterprise Efficiency ROI Calculator', 'Digital Transformation Readiness Assessment') provides immense value to Sarah, who values analytical, ROI-driven insights. These tools are inherently shareable, act as powerful lead magnets, and can go viral within professional networks, aligning with the persona's motivation."
+                },
+                {
+                  "name": "Niche Community-Led Growth & Dark Social Engagement",
+                  "budget_share_percent": 25.0,
+                  "reasoning": "Instead of direct ads, this involves actively participating in or even forming private online communities (e.g., Slack/Discord channels for specific industry CIOs, professional association forums) where Sarah engages. Providing genuine value, answering questions, and subtly introducing solutions fosters deep trust and generates organic word-of-mouth in 'dark social' channels, building a loyal user base."
+                },
+                {
+                  "name": "Strategic Podcast Sponsorships (Niche B2B/Tech Podcasts)",
+                  "budget_share_percent": 15.0,
+                  "reasoning": "Sponsoring highly targeted B2B podcasts listened to by enterprise decision-makers and tech leaders offers an intimate, long-form way to tell the TechStart SaaS story. This reaches 'Strategic Systems Sarah' during her commute or downtime, allowing for deeper brand affinity and thought leadership positioning in a less saturated advertising environment."
+                }
+              ]
+            }
+          },
+          "validation_checks": {
+            "standard_has_4_channels": true,
+            "standard_budget_matches": true,
+            "standard_duration_matches": true,
+            "standard_budget_sums_to_100": true,
+            "standard_all_channels_named": true,
+            "standard_all_have_reasoning": true,
+            "aggressive_has_4_channels": true,
+            "aggressive_budget_matches": true,
+            "aggressive_duration_matches": true,
+            "aggressive_budget_sums_to_100": true,
+            "aggressive_all_channels_named": true,
+            "aggressive_all_have_reasoning": true,
+            "experimental_has_4_channels": true,
+            "experimental_budget_matches": true,
+            "experimental_duration_matches": true,
+            "experimental_budget_sums_to_100": true,
+            "experimental_all_channels_named": true,
+            "experimental_all_have_reasoning": true,
+            "scenarios_are_different": true
+          },
+          "score": 1.0,
+          "passed_checks": 19,
+          "total_checks": 19
+        },
+        "creative": {
+          "success": true,
+          "duration_seconds": 7.13,
+          "creatives": {
+            "ideas": [
+              {
+                "title": "The ROI Revolution",
+                "description": "Highlight the tangible benefits of adopting TechStart SaaS through a 'before and after' narrative. Showcase how complex, inefficient processes transform into streamlined, data-driven operations, directly linking to significant ROI improvements and strategic advantages for enterprise clients."
+              },
+              {
+                "title": "Uncover Your Enterprise Advantage",
+                "description": "Position TechStart SaaS as the key to unlocking hidden potential within an organization's data and processes. Emphasize how our platform provides actionable insights that drive strategic decisions, enhance productivity, and enable sustainable growth, moving beyond mere efficiency to true competitive advantage."
+              },
+              {
+                "title": "Strategic Partner for Digital Transformation",
+                "description": "Present TechStart SaaS not just as a software vendor, but as a strategic partner in Sarah's digital transformation journey. Feature case studies demonstrating how TechStart enables seamless integration, fosters cross-departmental collaboration, and scales with enterprise needs, ensuring future-proof solutions."
+              }
+            ],
+            "hashtags": [
+              "#TechStartSaaS",
+              "#EnterpriseSoftware",
+              "#B2BSaaS",
+              "#DigitalTransformation",
+              "#ProcessOptimization",
+              "#DataAnalytics",
+              "#ROI",
+              "#ScalableSolutions",
+              "#BusinessEfficiency",
+              "#FutureOfWork"
+            ],
+            "slogans": [
+              "TechStart SaaS: Optimize. Scale. Grow.",
+              "Your Enterprise Advantage, Powered by TechStart.",
+              "Transform Data into Decisive Action."
+            ],
+            "short_ad_copy": "Streamline operations, unlock data insights, and drive enterprise growth with TechStart SaaS. Experience unparalleled efficiency and ROI.",
+            "long_ad_copy": "Strategic Systems Sarah, are you ready to elevate your enterprise? TechStart SaaS empowers leaders like you to transcend operational bottlenecks and harness the true power of your data. Our Austin-based, enterprise-grade software is engineered to deliver unparalleled process optimization, boost cross-departmental collaboration, and provide the actionable insights needed for scalable growth. Stop reacting, start strategizing. Discover how TechStart SaaS drives measurable ROI and future-proofs your digital transformation journey, turning complex challenges into clear competitive advantages. It's time to build a smarter, more efficient future for your organization.",
+            "cta_options": [
+              "Request a Personalized Demo",
+              "Download Our ROI Whitepaper",
+              "Get Your Free Enterprise Assessment"
+            ]
+          },
+          "validation_checks": {
+            "has_3_ideas": true,
+            "ideas_have_titles": true,
+            "ideas_have_descriptions": true,
+            "has_10_hashtags": true,
+            "has_3_slogans": true,
+            "short_copy_length": true,
+            "long_copy_length": true,
+            "has_3_ctas": true,
+            "no_empty_fields": true
+          },
+          "score": 1.0,
+          "passed_checks": 9,
+          "total_checks": 9
+        },
+        "performance": {
+          "success": true,
+          "duration_seconds": 23.88,
+          "score": 1.0
+        },
+        "critic": {
+          "success": true,
+          "duration_seconds": 24.25,
+          "evaluation": {
+            "overall_score": 0.68,
+            "dimension_scores": {
+              "channel_mix": 0.95,
+              "budget_logic": 0.2,
+              "persona_alignment": 1.0,
+              "competitor_differentiation": 0.6,
+              "creative_integration": 1.0,
+              "feasibility": 0.3
+            },
+            "issues": [
+              "Severely Inadequate Budget: The $10,000 budget over 12 weeks is highly unrealistic for generating qualified leads for enterprise software. Enterprise Cost Per Lead (CPL) is significantly higher, and the allocated amounts per channel are too low to run effective campaigns or produce high-quality assets required for this market.",
+              "Lack of Explicit Product Differentiation: While the messaging is strong and persona-aligned, the strategy doesn't clearly articulate *how* the enterprise software uniquely stands out against intense competition, especially regarding key differentiators like AI integration or UI/UX mentioned in the competitor landscape.",
+              "Feasibility of High-Cost Channels with Low Budget: Channels like 'Intensive Webinar Series & Virtual Summit Sponsorships,' 'B2B Micro-Influencer & Thought Leader Co-creation,' and 'Interactive ROI Calculators' require substantial investment that far exceeds the proportional budget allocations within the $10,000 total, making their effective execution highly improbable."
+            ],
+            "strengths": [
+              "Exceptional Persona Alignment: The strategy demonstrates a deep understanding of 'Strategic Systems Sarah,' with channels, creative assets, and content types perfectly tailored to her interests, platforms, and motivations.",
+              "Strong Creative Integration: The creative ideas, slogans, and CTAs are professional, value-driven, and directly support the lead generation goal, aligning seamlessly with the persona's analytical and ROI-focused preferences.",
+              "Well-Designed Channel Mixes (Strategically): Each media plan offers a strategically sound mix of channels that would be effective for enterprise lead generation *if adequately funded*. They cover various stages of the buyer journey and leverage relevant platforms."
+            ],
+            "recommendations": [
+              "Significantly Increase Budget: To achieve the goal of generating qualified enterprise leads, the budget needs to be substantially increased to reflect the true cost of enterprise marketing, potentially by 5-10x or more, depending on lead volume targets.",
+              "Prioritize Channels if Budget Remains Low: If the budget cannot be increased, focus on 1-2 most impactful channels (e.g., highly targeted LinkedIn Ads + Gated Content or Software Review Sites) rather than spreading a minimal budget too thinly across many, to maximize impact.",
+              "Articulate Unique Product Differentiators: Integrate specific product differentiators (e.g., unique AI capabilities, superior integration, ease of use for complex tasks) into the messaging and content strategy to clearly stand out from competitors.",
+              "Develop a Phased Approach for Experimental Channels: For channels like B2B micro-influencers or interactive tools, consider a pilot or phased approach with a dedicated, larger budget, rather than attempting full-scale execution with minimal funds.",
+              "Define Lead Qualification Criteria: While the goal is 'qualified leads,' explicitly defining what constitutes a 'qualified lead' (e.g., MQL/SQL criteria) would further enhance clarity and allow for better performance measurement."
+            ]
+          },
+          "validation_checks": {
+            "has_overall_score": true,
+            "score_in_range": true,
+            "has_dimension_scores": true,
+            "has_all_dimensions": true,
+            "has_strengths": true,
+            "has_issues_or_recommendations": true
+          },
+          "score": 1.0,
+          "critic_overall_score": 0.68,
+          "passed_checks": 6,
+          "total_checks": 6
+        }
+      },
+      "total_duration": 94.52,
+      "overall_success": true,
+      "average_agent_score": 0.98,
+      "critic_overall_score": 0.68,
+      "meets_minimum_score": false
+    },
+    {
+      "test_id": "test_003",
+      "business_name": "Green Valley Yoga",
+      "category": "Health & Wellness",
+      "start_time": 1763274111.894625,
+      "agents": {
+        "persona": {
+          "success": true,
+          "duration_seconds": 5.38,
+          "persona": {
+            "name": "Urban Zen Zoe",
+            "age_range": "28-42",
+            "interests": [
+              "Yoga",
+              "Mindfulness & Meditation",
+              "Sustainable Living",
+              "Local Community Events",
+              "Hiking & Outdoors",
+              "Healthy Eating"
+            ],
+            "platforms": [
+              "Instagram",
+              "Facebook Local Groups",
+              "Yelp",
+              "Google Maps",
+              "Pinterest"
+            ],
+            "creative_style": "Authentic, calming visuals with natural light; community-focused language; highlights mental and physical benefits; emphasizes local and sustainable values.",
+            "motivation": "To find a peaceful escape from city stress, connect with a like-minded community, and support a local business that aligns with her values of holistic well-being and sustainability."
+          },
+          "validation_checks": {
+            "has_name": true,
+            "has_age_range": true,
+            "has_interests": true,
+            "has_platforms": true,
+            "has_creative_style": true,
+            "has_motivation": true,
+            "age_range_reasonable": false,
+            "platforms_relevant": true
+          },
+          "score": 0.88,
+          "passed_checks": 7,
+          "total_checks": 8
+        },
+        "competitor": {
+          "success": true,
+          "duration_seconds": 16.64,
+          "competitors_analyzed": 3,
+          "score": 1.0
+        },
+        "planner": {
+          "success": true,
+          "duration_seconds": 18.35,
+          "scenarios": {
+            "standard_plan": {
+              "total_budget": 1500.0,
+              "duration_weeks": 6,
+              "channels": [
+                {
+                  "name": "Google My Business & Local SEO",
+                  "budget_share_percent": 25.0,
+                  "reasoning": "Essential for local businesses. Ensures Green Valley Yoga appears prominently in 'yoga Portland OR' searches and on Google Maps, directly targeting Urban Zen Zoe's local search habits and need for convenience."
+                },
+                {
+                  "name": "Instagram & Facebook Local Ads",
+                  "budget_share_percent": 40.0,
+                  "reasoning": "Urban Zen Zoe is highly active on Instagram and Facebook Local Groups. These platforms allow for precise local targeting and visual storytelling with calming, authentic visuals, directly aligning with her interests and creative style."
+                },
+                {
+                  "name": "Yelp & Online Directory Management",
+                  "budget_share_percent": 20.0,
+                  "reasoning": "Zoe uses Yelp to find local businesses. Maintaining a strong, well-reviewed presence on Yelp and other key directories (like Mindbody, ClassPass) builds trust and aids local discovery, crucial for membership growth."
+                },
+                {
+                  "name": "Local Community Partnerships",
+                  "budget_share_percent": 15.0,
+                  "reasoning": "Aligns with Zoe's interest in local community events and supporting sustainable businesses. Collaborating with local cafes, health food stores, or outdoor groups fosters community connections and authentic word-of-mouth referrals."
+                }
+              ]
+            },
+            "aggressive_plan": {
+              "total_budget": 1500.0,
+              "duration_weeks": 6,
+              "channels": [
+                {
+                  "name": "Google Search Ads (Local Intent)",
+                  "budget_share_percent": 35.0,
+                  "reasoning": "Captures high-intent users actively searching for yoga studios in Portland. This aggressive approach aims for immediate visibility and conversions by targeting specific local keywords, directly competing with larger studios for top search results."
+                },
+                {
+                  "name": "Instagram & Facebook Ads (Intensive Retargeting & Lookalikes)",
+                  "budget_share_percent": 40.0,
+                  "reasoning": "Maximizes ad spend on platforms where Zoe is active, focusing on broad reach, retargeting website visitors, and expanding to lookalike audiences to rapidly scale new member acquisition with compelling visual and community-focused creatives."
+                },
+                {
+                  "name": "Aggressive Introductory Offers (Promoted)",
+                  "budget_share_percent": 15.0,
+                  "reasoning": "Drives immediate sign-ups and trials by heavily promoting compelling introductory deals (e.g., 'First Week Free' or '3 Classes for $30'). This creates urgency and provides a low barrier to entry, converting interested leads quickly."
+                },
+                {
+                  "name": "High-Impact Local Pop-Up Classes/Workshops",
+                  "budget_share_percent": 10.0,
+                  "reasoning": "Generates significant buzz and direct engagement by hosting unique, highly-visible pop-up classes in iconic Portland locations. These events offer a direct experience of the studio's unique ambiance and allow for strong calls to action to join."
+                }
+              ]
+            },
+            "experimental_plan": {
+              "total_budget": 1500.0,
+              "duration_weeks": 6,
+              "channels": [
+                {
+                  "name": "Local Micro-Influencer & Community Collaborations",
+                  "budget_share_percent": 30.0,
+                  "reasoning": "Leverages trusted local voices (micro-influencers in wellness, sustainability, outdoors) to create authentic content and co-host events, reaching Zoe's network through genuine recommendations rather than traditional ads, aligning with her values."
+                },
+                {
+                  "name": "User-Generated Content (UGC) & Community Challenges",
+                  "budget_share_percent": 25.0,
+                  "reasoning": "Fosters a strong, engaged community and viral potential by running interactive challenges (e.g., 'Mindful Moments in Portland' photo contest) with studio prizes, encouraging members to share their experiences and become brand advocates."
+                },
+                {
+                  "name": "Experiential Pop-Up Events & Thematic Workshops",
+                  "budget_share_percent": 30.0,
+                  "reasoning": "Creates unique, shareable experiences beyond traditional classes (e.g., 'Yoga & Sound Bath in Forest Park,' 'Sustainable Living Workshop'). These events build brand identity, attract media attention, and resonate with Zoe's desire for holistic well-being and unique experiences."
+                },
+                {
+                  "name": "Pinterest Marketing & Visual Storytelling",
+                  "budget_share_percent": 15.0,
+                  "reasoning": "Taps into Zoe's active presence on Pinterest. By curating inspiring boards with calming visuals, mindful living tips, and studio aesthetics, Green Valley Yoga can build a strong visual brand, attract organic traffic, and position itself as a source of holistic wellness inspiration."
+                }
+              ]
+            }
+          },
+          "validation_checks": {
+            "standard_has_4_channels": true,
+            "standard_budget_matches": true,
+            "standard_duration_matches": true,
+            "standard_budget_sums_to_100": true,
+            "standard_all_channels_named": true,
+            "standard_all_have_reasoning": true,
+            "aggressive_has_4_channels": true,
+            "aggressive_budget_matches": true,
+            "aggressive_duration_matches": true,
+            "aggressive_budget_sums_to_100": true,
+            "aggressive_all_channels_named": true,
+            "aggressive_all_have_reasoning": true,
+            "experimental_has_4_channels": true,
+            "experimental_budget_matches": true,
+            "experimental_duration_matches": true,
+            "experimental_budget_sums_to_100": true,
+            "experimental_all_channels_named": true,
+            "experimental_all_have_reasoning": true,
+            "scenarios_are_different": true
+          },
+          "score": 1.0,
+          "passed_checks": 19,
+          "total_checks": 19
+        },
+        "creative": {
+          "success": true,
+          "duration_seconds": 8.74,
+          "creatives": {
+            "ideas": [
+              {
+                "title": "Rooted in Portland Wellness",
+                "description": "Showcase Green Valley Yoga as Zoe's local sanctuary amidst urban life. Feature authentic visuals of Portland's nature blended with serene studio shots, emphasizing how yoga helps urban dwellers find their calm. Promote special community events like 'Yoga in the Park' or 'Mindful Hikes' for members."
+              },
+              {
+                "title": "Sustainable Serenity Series",
+                "description": "A campaign highlighting Green Valley Yoga's commitment to sustainability and holistic well-being. Feature a limited-time series of workshops focusing on eco-conscious living, plant-based nutrition, and meditation, all tied back to the grounding practice of yoga. Emphasize how practicing with us supports a local, green business."
+              },
+              {
+                "title": "Your Urban Escape Pass",
+                "description": "Introduce a special trial offer for new members (e.g., 3 classes for $30) positioned as an 'escape pass' from city stress. Content will focus on the immediate mental and physical benefits of just a few classes, showing diverse individuals finding peace and strength in our welcoming community."
+              }
+            ],
+            "hashtags": [
+              "#GreenValleyYoga",
+              "#PortlandYoga",
+              "#PDXYoga",
+              "#MindfulLiving",
+              "#SustainableWellness",
+              "#CommunityYoga",
+              "#ZenVibesPDX",
+              "#LocalPortland",
+              "#YogaLife",
+              "#EscapeTheHustle"
+            ],
+            "slogans": [
+              "Find Your Flow, Grow Your Roots.",
+              "Portland's Urban Sanctuary for Mindful Movement.",
+              "Connect. Breathe. Thrive. Locally."
+            ],
+            "short_ad_copy": "Escape the city. Find your calm at Green Valley Yoga, Portland's sustainable sanctuary. Join our mindful community!",
+            "long_ad_copy": "Tired of the urban hustle? Discover your peaceful escape at Green Valley Yoga, nestled right here in Portland. We offer a serene space where you can reconnect with yourself, find mindful movement, and build strength, both inside and out. Our studio is more than just a place to practice; it's a vibrant community committed to holistic well-being and sustainable living. Join like-minded individuals, deepen your practice, and support a local business that truly cares for our planet and people. Unroll your mat and find your flow.",
+            "cta_options": [
+              "Claim Your Intro Offer",
+              "View Class Schedule & Sign Up",
+              "Discover Your Portland Sanctuary"
+            ]
+          },
+          "validation_checks": {
+            "has_3_ideas": true,
+            "ideas_have_titles": true,
+            "ideas_have_descriptions": true,
+            "has_10_hashtags": true,
+            "has_3_slogans": true,
+            "short_copy_length": true,
+            "long_copy_length": true,
+            "has_3_ctas": true,
+            "no_empty_fields": true
+          },
+          "score": 1.0,
+          "passed_checks": 9,
+          "total_checks": 9
+        },
+        "performance": {
+          "success": true,
+          "duration_seconds": 23.23,
+          "score": 1.0
+        },
+        "critic": {
+          "success": true,
+          "duration_seconds": 22.06,
+          "evaluation": {
+            "overall_score": 0.77,
+            "dimension_scores": {
+              "channel_mix": 0.9,
+              "budget_logic": 0.3,
+              "persona_alignment": 1.0,
+              "competitor_differentiation": 0.9,
+              "creative_integration": 1.0,
+              "feasibility": 0.5
+            },
+            "issues": [
+              "The primary and most significant issue is the extremely low budget ($1500 over 6 weeks) for all three media plans. This budget is highly unrealistic for achieving the goal of growing membership and class attendance in a competitive market like Portland, severely limiting the potential reach and impact of paid channels and the scale of community initiatives.",
+              "The 6-week timeframe is relatively short for a marketing campaign to generate substantial, measurable growth, especially when coupled with the limited budget."
+            ],
+            "strengths": [
+              "Exceptional Persona Alignment: The entire strategy, from channel selection to creative concepts, is deeply aligned with Urban Zen Zoe's interests, platforms, values, and motivations, ensuring highly targeted messaging.",
+              "Strong Competitor Differentiation: The plan effectively leverages local, authentic, community-focused, mindful, and sustainable values to create a unique brand identity that stands out from more generic or standardized competitors.",
+              "Excellent Creative Integration: The proposed creative ideas, slogans, and CTAs perfectly match the persona's desired aesthetic and the overall brand messaging, and are well-suited for the chosen distribution channels.",
+              "Targeted Channel Mix: The selection of channels across all three plans is highly relevant to the target persona's digital habits and local community engagement, ensuring efficient reach within the chosen platforms."
+            ],
+            "recommendations": [
+              "Increase Budget Significantly: To achieve meaningful growth in membership and class attendance, the budget needs to be substantially increased. A more realistic budget for a 6-week campaign aiming for growth in a competitive market would likely be $5,000 - $10,000+ to allow for impactful ad spend and more robust community initiatives.",
+              "Prioritize Channels for Impact: If a budget increase is not feasible, consolidate efforts into 1-2 channels per plan that offer the highest potential ROI. For example, focus heavily on Google My Business/Local SEO and Instagram/Facebook Local Ads in the Standard plan, rather than spreading the minimal budget too thin.",
+              "Define Clear, Measurable KPIs: Establish specific, measurable key performance indicators (e.g., number of new trial sign-ups, class bookings from specific channels, website conversions) for each media plan to effectively track performance and optimize spend, especially with limited resources.",
+              "Consider a Longer Campaign Duration: Extend the campaign beyond 6 weeks to allow for better data collection, optimization, and sustained impact, which is crucial for building a community and growing membership.",
+              "Elaborate on Offers and Partnerships: Provide more specific details on the nature of 'Aggressive Introductory Offers' (e.g., 7-day free trial, discounted first month) and the types of 'Local Community Partnerships' or 'Experiential Pop-Up Events' envisioned to ensure they are compelling and executable within the given (or increased) budget."
+            ]
+          },
+          "validation_checks": {
+            "has_overall_score": true,
+            "score_in_range": true,
+            "has_dimension_scores": true,
+            "has_all_dimensions": true,
+            "has_strengths": true,
+            "has_issues_or_recommendations": true
+          },
+          "score": 1.0,
+          "critic_overall_score": 0.77,
+          "passed_checks": 6,
+          "total_checks": 6
+        }
+      },
+      "total_duration": 94.38,
+      "overall_success": true,
+      "average_agent_score": 0.98,
+      "critic_overall_score": 0.77,
+      "meets_minimum_score": true
+    },
+    {
+      "test_id": "test_004",
+      "business_name": "Urban Threads Boutique",
+      "category": "Retail/Fashion",
+      "start_time": 1763274206.27672,
+      "agents": {
+        "persona": {
+          "success": true,
+          "duration_seconds": 7.35,
+          "persona": {
+            "name": "Chloe the Curated Urbanite",
+            "age_range": "24-35",
+            "interests": [
+              "Fashion trends",
+              "Unique clothing boutiques",
+              "Street style photography",
+              "Local art and music scenes",
+              "Brunch spots and cafes",
+              "Sustainable fashion",
+              "Travel and cultural experiences"
+            ],
+            "platforms": [
+              "Instagram",
+              "TikTok",
+              "Pinterest",
+              "Fashion blogs/magazines (online)",
+              "Yelp/Google Maps for local discovery"
+            ],
+            "creative_style": "Visually appealing, authentic, lifestyle-focused content featuring diverse models and real-life styling inspiration. Values high-quality photography and short, engaging videos that tell a story.",
+            "motivation": "To express her individuality through unique, trend-conscious fashion pieces that stand out from mainstream fast-fashion brands. She seeks curated collections and enjoys supporting local businesses that align with her values for quality and style."
+          },
+          "validation_checks": {
+            "has_name": true,
+            "has_age_range": true,
+            "has_interests": true,
+            "has_platforms": true,
+            "has_creative_style": true,
+            "has_motivation": true,
+            "age_range_reasonable": false,
+            "platforms_relevant": true
+          },
+          "score": 0.88,
+          "passed_checks": 7,
+          "total_checks": 8
+        },
+        "competitor": {
+          "success": true,
+          "duration_seconds": 13.72,
+          "competitors_analyzed": 3,
+          "score": 1.0
+        },
+        "planner": {
+          "success": true,
+          "duration_seconds": 20.5,
+          "scenarios": {
+            "standard_plan": {
+              "total_budget": 5000.0,
+              "duration_weeks": 10,
+              "channels": [
+                {
+                  "name": "Instagram Ads",
+                  "budget_share_percent": 40.0,
+                  "reasoning": "Instagram is Chloe's primary platform, highly visual and ideal for showcasing fashion trends, street style, and unique collections. Targeted ads can effectively reach a fashion-conscious audience in NYC and drive direct sales through shoppable posts."
+                },
+                {
+                  "name": "Google Local Search Ads",
+                  "budget_share_percent": 30.0,
+                  "reasoning": "Crucial for local discovery, driving both online traffic and in-store visits. Targets users actively searching for boutiques and clothing stores in New York City, leveraging Chloe's use of Yelp/Google Maps for local exploration."
+                },
+                {
+                  "name": "Pinterest Ads",
+                  "budget_share_percent": 20.0,
+                  "reasoning": "A visual discovery engine where Chloe seeks fashion inspiration and product ideas. Pinterest ads are cost-effective for reaching users with high purchase intent through visually appealing product pins and curated collections."
+                },
+                {
+                  "name": "Email Marketing",
+                  "budget_share_percent": 10.0,
+                  "reasoning": "A highly cost-effective channel for building direct relationships, nurturing leads, and driving repeat purchases. It allows for direct communication of new arrivals, promotions, and exclusive events to an engaged audience, supporting both online and in-store sales."
+                }
+              ]
+            },
+            "aggressive_plan": {
+              "total_budget": 5000.0,
+              "duration_weeks": 10,
+              "channels": [
+                {
+                  "name": "TikTok Ads",
+                  "budget_share_percent": 35.0,
+                  "reasoning": "Leverages TikTok's massive reach and viral potential to rapidly increase brand awareness and engagement among Chloe's demographic. This high-impact channel uses short, engaging video content to quickly capture attention and drive trend adoption."
+                },
+                {
+                  "name": "Instagram Ads (High-Frequency Targeting)",
+                  "budget_share_percent": 30.0,
+                  "reasoning": "Intensifies presence on Chloe's primary visual platform with higher ad spend and frequency. The goal is to dominate the feed with visually compelling lifestyle content and strong calls-to-action for immediate sales and brand recall."
+                },
+                {
+                  "name": "Paid Local Micro-Influencer Collaborations",
+                  "budget_share_percent": 25.0,
+                  "reasoning": "Utilizes authentic voices within the NYC fashion community to create trusted endorsements and generate buzz. Micro-influencers offer higher engagement and a more targeted reach, resonating deeply with Chloe's desire for authenticity and local support."
+                },
+                {
+                  "name": "Local Pop-up Experience / Flash Sale Events",
+                  "budget_share_percent": 10.0,
+                  "reasoning": "Creates immediate local buzz and drives high-intent foot traffic to a physical location for a limited time. This strategy generates urgency, exclusivity, and word-of-mouth, offering a unique, engaging experience that stands out from competitors."
+                }
+              ]
+            },
+            "experimental_plan": {
+              "total_budget": 5000.0,
+              "duration_weeks": 10,
+              "channels": [
+                {
+                  "name": "Collaborative Pop-up Events with Local Businesses",
+                  "budget_share_percent": 35.0,
+                  "reasoning": "Generates unique brand experiences and PR by partnering with complementary local artists or cafes. This attracts Chloe's interest in local art/music and cafes, fostering community, unique storytelling, and organic reach beyond traditional advertising."
+                },
+                {
+                  "name": "TikTok User-Generated Content (UGC) Challenge",
+                  "budget_share_percent": 30.0,
+                  "reasoning": "Initiates a branded challenge to encourage viral content creation, leveraging Chloe's platform usage and desire for authentic expression. Aims for high organic reach, brand interaction, and genuine peer-to-peer recommendations through creative participation."
+                },
+                {
+                  "name": "Niche Fashion Blog/Online Magazine Features (Native Content)",
+                  "budget_share_percent": 25.0,
+                  "reasoning": "Secures in-depth features or sponsored content in online publications that Chloe reads. This provides credibility, rich brand storytelling, and positions Urban Threads as a thought leader in sustainable or unique fashion, rather than just an advertiser."
+                },
+                {
+                  "name": "Instagram AR Filters / Interactive Shopping Experiences",
+                  "budget_share_percent": 10.0,
+                  "reasoning": "Develops innovative Augmented Reality (AR) filters for virtual try-on or interactive shopping experiences. This provides a playful, shareable, and tech-forward way to engage Chloe, encouraging discovery and interaction with products in a novel manner."
+                }
+              ]
+            }
+          },
+          "validation_checks": {
+            "standard_has_4_channels": true,
+            "standard_budget_matches": true,
+            "standard_duration_matches": true,
+            "standard_budget_sums_to_100": true,
+            "standard_all_channels_named": true,
+            "standard_all_have_reasoning": true,
+            "aggressive_has_4_channels": true,
+            "aggressive_budget_matches": true,
+            "aggressive_duration_matches": true,
+            "aggressive_budget_sums_to_100": true,
+            "aggressive_all_channels_named": true,
+            "aggressive_all_have_reasoning": true,
+            "experimental_has_4_channels": true,
+            "experimental_budget_matches": true,
+            "experimental_duration_matches": true,
+            "experimental_budget_sums_to_100": true,
+            "experimental_all_channels_named": true,
+            "experimental_all_have_reasoning": true,
+            "scenarios_are_different": true
+          },
+          "score": 1.0,
+          "passed_checks": 19,
+          "total_checks": 19
+        },
+        "creative": {
+          "success": true,
+          "duration_seconds": 7.81,
+          "creatives": {
+            "ideas": [
+              {
+                "title": "NYC Street Style Spotlight",
+                "description": "Showcase real customers and local micro-influencers styling Urban Threads pieces in iconic New York City locations. This campaign will feature high-quality street style photography and short, engaging videos that highlight individual expression and the versatility of our curated collection, resonating with Chloe's love for authentic, local fashion."
+              },
+              {
+                "title": "Curated Closet Chronicles",
+                "description": "Launch a series of short-form video content (for Instagram Reels, TikTok, Pinterest Idea Pins) demonstrating how to style 1-2 key pieces from Urban Threads into 3-5 distinct, unique outfits for various NYC occasions \u2013 from a brunch outing to an art gallery opening. Emphasize the quality and longevity of our pieces, appealing to Chloe's interest in sustainable, versatile fashion."
+              },
+              {
+                "title": "Threaded Through NYC: Local Collaborations",
+                "description": "Partner with local New York artists, musicians, or popular cafes/boutique brunch spots for exclusive content, pop-up events, or limited-edition capsule collections. This connects Urban Threads directly to the vibrant local culture that Chloe appreciates, offering unique experiences and demonstrating our commitment to the NYC community."
+              }
+            ],
+            "hashtags": [
+              "#UrbanThreadsNYC",
+              "#CuratedUrbanite",
+              "#NYCStyle",
+              "#IndieFashion",
+              "#BoutiqueFinds",
+              "#StreetStyleNYC",
+              "#ShopLocalNYC",
+              "#FashionForward",
+              "#UniqueThreads",
+              "#StyleStory"
+            ],
+            "slogans": [
+              "Your Style, Uniquely Curated.",
+              "NYC's Vibe, Worn Your Way.",
+              "Stand Out. Thread By Thread."
+            ],
+            "short_ad_copy": "Discover unique, trend-conscious fashion for the NYC style seeker. Express your individuality. Shop Urban Threads!",
+            "long_ad_copy": "Tired of blending in? Chloe, it's time to let your true style shine. Urban Threads Boutique is your destination for unique, trend-conscious fashion pieces that reflect your individuality. We hand-pick every item, ensuring a curated collection that stands apart from mainstream fast-fashion. From perfect brunch outfits to statement pieces for a gallery hop, find high-quality garments that tell your story. Support local, embrace sustainable-minded style, and discover why NYC's most discerning fashionistas choose Urban Threads. Visit us in SoHo or explore our online collection today and elevate your urban wardrobe.",
+            "cta_options": [
+              "Shop the Latest Collection",
+              "Visit Our NYC Boutique",
+              "Discover Your Unique Style"
+            ]
+          },
+          "validation_checks": {
+            "has_3_ideas": true,
+            "ideas_have_titles": true,
+            "ideas_have_descriptions": true,
+            "has_10_hashtags": true,
+            "has_3_slogans": true,
+            "short_copy_length": true,
+            "long_copy_length": true,
+            "has_3_ctas": true,
+            "no_empty_fields": true
+          },
+          "score": 1.0,
+          "passed_checks": 9,
+          "total_checks": 9
+        },
+        "performance": {
+          "success": true,
+          "duration_seconds": 25.07,
+          "score": 1.0
+        },
+        "critic": {
+          "success": true,
+          "duration_seconds": 27.05,
+          "evaluation": {
+            "overall_score": 0.75,
+            "dimension_scores": {
+              "channel_mix": 0.95,
+              "budget_logic": 0.3,
+              "persona_alignment": 0.98,
+              "competitor_differentiation": 0.9,
+              "creative_integration": 0.95,
+              "feasibility": 0.4
+            },
+            "issues": [
+              "The overall budget of $5000 over 10 weeks ($500/week) is severely inadequate for driving significant online and in-store sales in the highly competitive New York fashion market. This budget severely limits the reach, frequency, and impact of all proposed initiatives, making the plans largely unfeasible for achieving the business goal.",
+              "Specific allocations for high-impact activities like Paid Local Micro-Influencer Collaborations, Local Pop-up Experiences, Collaborative Pop-up Events, or Niche Fashion Blog features are too low to make a meaningful impact in a market like NYC. For example, $50/week for a pop-up event is unrealistic."
+            ],
+            "strengths": [
+              "Exceptional Persona Alignment: The plans demonstrate a deep understanding of 'Chloe the Curated Urbanite,' leveraging her preferred platforms, interests (local, unique, authentic, experiential), and motivations with great precision.",
+              "Strong Channel Mix Strategy: The chosen channels across all three plans are highly relevant to the target persona and effectively aim to drive both online and in-store sales, covering discovery, engagement, and conversion.",
+              "Effective Competitor Differentiation: The Aggressive and Experimental plans, in particular, propose innovative and experiential tactics that effectively differentiate the brand from fast-fashion giants by emphasizing local, authentic, and value-driven experiences.",
+              "Cohesive Creative Integration: The creative ideas, slogans, and CTAs are perfectly aligned with the persona's creative style and the strategic direction of the marketing plans, fostering a consistent and compelling brand message.",
+              "Clarity and Actionability: The plans are well-structured, clearly define channels and allocations, and outline actionable marketing tactics, making them easy to understand and implement in theory."
+            ],
+            "recommendations": [
+              "Significantly Increase Budget: To realistically achieve the business goal of driving sales in the NYC market, the marketing budget needs to be substantially increased. A more realistic budget would allow for greater reach, more impactful influencer collaborations, and more robust experiential events.",
+              "Prioritize and Scale Initiatives: If a significant budget increase is not immediately possible, prioritize one or two highly impactful initiatives (e.g., a focused micro-influencer campaign or a single, well-executed collaborative pop-up) rather than spreading a minimal budget too thinly across many channels.",
+              "Leverage Organic Growth and Community Building: Given budget constraints, heavily invest in organic social media content, community engagement, and leveraging user-generated content (as suggested in the Experimental plan) to build brand loyalty and word-of-mouth, which can amplify limited paid efforts.",
+              "Develop Detailed ROI Projections: Create more detailed ROI projections for each channel, considering the actual costs and potential returns in the NYC market, to better justify budget allocation and demonstrate potential impact to secure additional funding.",
+              "Consider Phased Approach: Start with a highly targeted, smaller-scale experimental campaign to gather data, prove concept, and demonstrate initial ROI before scaling up with a larger budget and broader channel mix."
+            ]
+          },
+          "validation_checks": {
+            "has_overall_score": true,
+            "score_in_range": true,
+            "has_dimension_scores": true,
+            "has_all_dimensions": true,
+            "has_strengths": true,
+            "has_issues_or_recommendations": true
+          },
+          "score": 1.0,
+          "critic_overall_score": 0.75,
+          "passed_checks": 6,
+          "total_checks": 6
+        }
+      },
+      "total_duration": 101.5,
+      "overall_success": true,
+      "average_agent_score": 0.98,
+      "critic_overall_score": 0.75,
+      "meets_minimum_score": true
+    },
+    {
+      "test_id": "test_005",
+      "business_name": "Peak Performance Gym",
+      "category": "Fitness",
+      "start_time": 1763274307.7777972,
+      "agents": {
+        "persona": {
+          "success": true,
+          "duration_seconds": 8.45,
+          "persona": {
+            "name": "Summit Seeker Sara",
+            "age_range": "28-42",
+            "interests": [
+              "Weightlifting",
+              "Personal Training",
+              "Functional Fitness",
+              "Hiking & Trail Running",
+              "Skiing/Snowboarding",
+              "Cycling",
+              "Nutrition & Wellness",
+              "Performance Tracking",
+              "Local Outdoor Events"
+            ],
+            "platforms": [
+              "Instagram",
+              "Facebook (local groups)",
+              "Google Search",
+              "Strava",
+              "Yelp"
+            ],
+            "creative_style": "Empowering, results-driven, and authentic, showcasing progress, expert coaching, and a supportive community with high-quality visuals of active individuals achieving their goals, coupled with inspiring testimonials.",
+            "motivation": "To achieve specific, challenging fitness goals, such as improving strength for mountain sports (hiking, skiing) or completing a local endurance event. She seeks expert guidance, a premium training environment, and a motivating community that will push her beyond the limits of a generic gym, valuing personalized attention and measurable progress."
+          },
+          "validation_checks": {
+            "has_name": true,
+            "has_age_range": true,
+            "has_interests": true,
+            "has_platforms": true,
+            "has_creative_style": true,
+            "has_motivation": true,
+            "age_range_reasonable": false,
+            "platforms_relevant": true
+          },
+          "score": 0.88,
+          "passed_checks": 7,
+          "total_checks": 8
+        },
+        "competitor": {
+          "success": true,
+          "duration_seconds": 15.16,
+          "competitors_analyzed": 3,
+          "score": 1.0
+        },
+        "planner": {
+          "success": true,
+          "duration_seconds": 19.05,
+          "scenarios": {
+            "standard_plan": {
+              "total_budget": 7000.0,
+              "duration_weeks": 8,
+              "channels": [
+                {
+                  "name": "Google Search Ads (PPC)",
+                  "budget_share_percent": 35.0,
+                  "reasoning": "Captures high-intent users actively searching for gyms, personal trainers, or fitness centers in Denver, directly aligning with the business goal and local nature."
+                },
+                {
+                  "name": "Social Media Ads (Instagram & Facebook)",
+                  "budget_share_percent": 30.0,
+                  "reasoning": "Leverages visual platforms popular with Summit Seeker Sara, allowing for targeted campaigns based on interests (weightlifting, outdoor sports) and demographics, showcasing the gym's empowering creative style."
+                },
+                {
+                  "name": "Local SEO & Online Directories (Yelp, GMB)",
+                  "budget_share_percent": 20.0,
+                  "reasoning": "Essential for local visibility, building trust through reviews, and ensuring Peak Performance Gym appears prominently when Sara searches for local fitness options, as she uses Yelp."
+                },
+                {
+                  "name": "Retargeting Ads",
+                  "budget_share_percent": 15.0,
+                  "reasoning": "Efficiently re-engages website visitors or those who interacted with previous ads but didn't convert, maximizing ROI by targeting warm leads who have already shown interest in Peak Performance Gym."
+                }
+              ]
+            },
+            "aggressive_plan": {
+              "total_budget": 7000.0,
+              "duration_weeks": 8,
+              "channels": [
+                {
+                  "name": "Google Search Ads (Expanded & Competitor Bidding)",
+                  "budget_share_percent": 30.0,
+                  "reasoning": "Aggressively targets high-intent searchers, including those looking for competitors, ensuring maximum visibility and direct conversion opportunities in the competitive Denver market."
+                },
+                {
+                  "name": "Social Media Ads (Heavy Video & Lead Gen Focus)",
+                  "budget_share_percent": 35.0,
+                  "reasoning": "Utilizes dynamic video content and direct lead generation forms on Instagram/Facebook to rapidly capture attention, showcase the gym's premium offerings and expert coaching, and drive immediate sign-ups."
+                },
+                {
+                  "name": "Strava Ads/Partnerships",
+                  "budget_share_percent": 20.0,
+                  "reasoning": "Directly reaches Summit Seeker Sara and other outdoor/performance enthusiasts through a highly niche platform, allowing for precise targeting based on their active lifestyles and fitness tracking interests."
+                },
+                {
+                  "name": "Local Event Sponsorship/Activation",
+                  "budget_share_percent": 15.0,
+                  "reasoning": "Provides high-impact brand exposure and direct engagement opportunities at major Denver outdoor events, connecting Peak Performance Gym with a large, relevant audience and fostering community ties."
+                }
+              ]
+            },
+            "experimental_plan": {
+              "total_budget": 7000.0,
+              "duration_weeks": 8,
+              "channels": [
+                {
+                  "name": "Local Micro-Influencer Collaborations (Instagram/Strava)",
+                  "budget_share_percent": 35.0,
+                  "reasoning": "Builds authentic connections and trust by leveraging local fitness/outdoor micro-influencers to showcase the gym, its community, and expert coaching, resonating with Sara's desire for authenticity."
+                },
+                {
+                  "name": "\"Peak Performance Challenge\" & UGC Contest",
+                  "budget_share_percent": 25.0,
+                  "reasoning": "Creates buzz and strong community engagement by inviting members and prospects to participate in a goal-oriented challenge, generating valuable user-generated content and organic social sharing."
+                },
+                {
+                  "name": "Partnerships with Local Outdoor Retailers/Brands",
+                  "budget_share_percent": 20.0,
+                  "reasoning": "Taps into established communities of outdoor enthusiasts in Denver through co-promotional efforts and workshops, directly reaching Sara's interest groups and building brand affinity."
+                },
+                {
+                  "name": "Interactive Digital Experience/Virtual Tour + Targeted Ads",
+                  "budget_share_percent": 20.0,
+                  "reasoning": "Offers an innovative and immersive way to showcase the gym's premium environment and personalized services, attracting tech-savvy prospects and differentiating from competitors through a unique online experience."
+                }
+              ]
+            }
+          },
+          "validation_checks": {
+            "standard_has_4_channels": true,
+            "standard_budget_matches": false,
+            "standard_duration_matches": true,
+            "standard_budget_sums_to_100": true,
+            "standard_all_channels_named": true,
+            "standard_all_have_reasoning": true,
+            "aggressive_has_4_channels": true,
+            "aggressive_budget_matches": false,
+            "aggressive_duration_matches": true,
+            "aggressive_budget_sums_to_100": true,
+            "aggressive_all_channels_named": true,
+            "aggressive_all_have_reasoning": true,
+            "experimental_has_4_channels": true,
+            "experimental_budget_matches": false,
+            "experimental_duration_matches": true,
+            "experimental_budget_sums_to_100": true,
+            "experimental_all_channels_named": true,
+            "experimental_all_have_reasoning": true,
+            "scenarios_are_different": true
+          },
+          "score": 0.84,
+          "passed_checks": 16,
+          "total_checks": 19
+        },
+        "creative": {
+          "success": true,
+          "duration_seconds": 8.0,
+          "creatives": {
+            "ideas": [
+              {
+                "title": "Conquer Your Summit Challenge",
+                "description": "Launch an 8-week challenge focused on building strength, endurance, and functional movement specifically for Colorado's outdoor pursuits. The program includes personalized coaching, progress tracking, and culminates in a group 'summit' event, like a challenging hike or trail run, demonstrating measurable gains."
+              },
+              {
+                "title": "Expert Edge Series",
+                "description": "Highlight individual personal trainers with their specialized expertise in areas like strength & conditioning for skiers, injury prevention for runners, or high-altitude training. Offer a limited-time free consultation or mini-session with a featured expert, showcasing the personalized, results-driven guidance available."
+              },
+              {
+                "title": "Beyond the Gym Walls",
+                "description": "Create a campaign showcasing current members achieving their outdoor goals \u2013 conquering a 14er, skiing black diamonds, or completing a local endurance race. Use authentic testimonials and high-quality visuals that explicitly link their training at Peak Performance Gym to their real-world successes and adventures."
+              }
+            ],
+            "hashtags": [
+              "#PeakPerformanceGym",
+              "#DenverFitness",
+              "#SummitStrong",
+              "#ColoradoFit",
+              "#MountainReady",
+              "#TrainForLife",
+              "#PersonalTrainingDenver",
+              "#FunctionalFitness",
+              "#AchieveYourPeak",
+              "#PPGDenver"
+            ],
+            "slogans": [
+              "Elevate Your Game. Conquer Your Mountain.",
+              "Denver's Peak Performance Starts Here.",
+              "Train Smarter. Live Stronger. Play Harder."
+            ],
+            "short_ad_copy": "Unleash your outdoor potential. Expert coaching, functional training, and a community that pushes you higher. Train for life.",
+            "long_ad_copy": "Tired of generic gyms? At Peak Performance Gym, we understand your drive to conquer Colorado's toughest trails and dominate the slopes. Our expert trainers craft personalized programs focused on strength, endurance, and functional movement specifically for your mountain sports goals. Track your progress, connect with a supportive community, and get the specialized guidance you need to not just reach, but surpass your personal best. Stop dreaming of peak performance and start training for it. Your next adventure begins here.",
+            "cta_options": [
+              "Book Your Free Consultation Today!",
+              "Start Your Peak Journey \u2013 Join Now!",
+              "Explore Our Personal Training Programs!"
+            ]
+          },
+          "validation_checks": {
+            "has_3_ideas": true,
+            "ideas_have_titles": true,
+            "ideas_have_descriptions": true,
+            "has_10_hashtags": true,
+            "has_3_slogans": true,
+            "short_copy_length": true,
+            "long_copy_length": true,
+            "has_3_ctas": true,
+            "no_empty_fields": true
+          },
+          "score": 1.0,
+          "passed_checks": 9,
+          "total_checks": 9
+        },
+        "performance": {
+          "success": true,
+          "duration_seconds": 24.35,
+          "score": 1.0
+        },
+        "critic": {
+          "success": true,
+          "duration_seconds": 19.17,
+          "evaluation": {
+            "overall_score": 0.83,
+            "dimension_scores": {
+              "channel_mix": 0.9,
+              "budget_logic": 0.6,
+              "persona_alignment": 1.0,
+              "competitor_differentiation": 0.9,
+              "creative_integration": 1.0,
+              "feasibility": 0.6
+            },
+            "issues": [
+              "The overall budget of $7000 for an 8-week campaign in the highly competitive Denver market is significantly low to achieve substantial increases in memberships and personal training sign-ups. This limits the reach and impact of the well-chosen channels.",
+              "Some proposed activities, such as 'Local Event Sponsorship/Activation' or 'Interactive Digital Experience/Virtual Tour,' would consume a disproportionate amount of the limited budget, leaving insufficient funds for sustained promotion or other critical channels to drive conversions."
+            ],
+            "strengths": [
+              "Exceptional persona alignment across all aspects of the plan, including channel selection, creative ideas, and messaging, perfectly targeting Summit Seeker Sara's motivations and interests.",
+              "Strong differentiation strategy by focusing on a niche (performance for outdoor sports) and leveraging unique, persona-specific channels like Strava, local events, and micro-influencers.",
+              "Highly relevant, inspiring, and actionable creative assets (ideas, slogans, CTAs) that directly support the persona's goals and the strategic objectives.",
+              "Well-chosen channel mixes that effectively combine foundational digital marketing with niche, experiential tactics, particularly in the Aggressive and Experimental plans.",
+              "The plan components are clear, well-defined, and actionable, providing a solid framework for execution."
+            ],
+            "recommendations": [
+              "**Increase Budget Significantly:** To realistically achieve the stated business goals of increasing memberships and PT sign-ups in the competitive Denver market, a substantially larger budget is required. Consider a minimum of 2-3x the current budget for an 8-week campaign to allow for meaningful ad spend, sustained reach, and impactful activations.",
+              "**Prioritize Channels and Phased Approach:** If the budget cannot be increased, prioritize 1-2 key channels from the 'Aggressive' or 'Experimental' plans that offer the highest ROI for the target persona (e.g., focused Instagram/Facebook video ads with lead generation, combined with targeted Google Search or Strava ads). Consider a phased approach, using the initial 8 weeks as a test phase to gather data and optimize for very specific, measurable objectives (e.g., lead generation for PT consultations) rather than broad membership increases.",
+              "**Leverage Cost-Effective Content:** Maximize the use of user-generated content (UGC) and authentic testimonials, especially for the 'Peak Performance Challenge' and micro-influencer collaborations, to reduce creative production costs while maintaining the desired 'authentic' and 'results-driven' creative style.",
+              "**Refine Event/Partnership Scope:** For local events or partnerships, focus on highly targeted, low-cost activations that maximize direct engagement and lead capture with Summit Seeker Sara, rather than broad sponsorships that may exceed the current budget's capacity."
+            ]
+          },
+          "validation_checks": {
+            "has_overall_score": true,
+            "score_in_range": true,
+            "has_dimension_scores": true,
+            "has_all_dimensions": true,
+            "has_strengths": true,
+            "has_issues_or_recommendations": true
+          },
+          "score": 1.0,
+          "critic_overall_score": 0.83,
+          "passed_checks": 6,
+          "total_checks": 6
+        }
+      },
+      "total_duration": 94.17,
+      "overall_success": true,
+      "average_agent_score": 0.95,
+      "critic_overall_score": 0.83,
+      "meets_minimum_score": true
+    }
+  ],
+  "summary": {
+    "total_tests": 5,
+    "successful_tests": 5,
+    "failed_tests": 0,
+    "average_duration": 94.35,
+    "average_agent_score": 0.97,
+    "average_critic_score": 0.76,
+    "tests_meeting_min_score": 4,
+    "agent_performance": {
+      "persona": {
+        "average_score": 0.88,
+        "average_duration": 6.55,
+        "success_rate": 1.0
+      },
+      "competitor": {
+        "average_score": 1.0,
+        "average_duration": 14.63,
+        "success_rate": 1.0
+      },
+      "planner": {
+        "average_score": 0.97,
+        "average_duration": 18.88,
+        "success_rate": 1.0
+      },
+      "creative": {
+        "average_score": 1.0,
+        "average_duration": 8.21,
+        "success_rate": 1.0
+      },
+      "performance": {
+        "average_score": 1.0,
+        "average_duration": 23.83,
+        "success_rate": 1.0
+      },
+      "critic": {
+        "average_score": 1.0,
+        "average_duration": 22.25,
+        "success_rate": 1.0
+      }
+    },
+    "category_performance": {
+      "Food & Beverage": {
+        "test_count": 1,
+        "avg_score": 0.98,
+        "avg_critic_score": 0.78
+      },
+      "Technology/SaaS": {
+        "test_count": 1,
+        "avg_score": 0.98,
+        "avg_critic_score": 0.68
+      },
+      "Health & Wellness": {
+        "test_count": 1,
+        "avg_score": 0.98,
+        "avg_critic_score": 0.77
+      },
+      "Retail/Fashion": {
+        "test_count": 1,
+        "avg_score": 0.98,
+        "avg_critic_score": 0.75
+      },
+      "Fitness": {
+        "test_count": 1,
+        "avg_score": 0.95,
+        "avg_critic_score": 0.83
+      }
+    },
+    "duration_stats": {
+      "min": 87.2,
+      "max": 101.5,
+      "total": 471.77
+    }
+  }
+}

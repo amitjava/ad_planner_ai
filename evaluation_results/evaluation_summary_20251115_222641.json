@@ -1,0 +1,76 @@
+{
+  "timestamp": "2025-11-15T22:18:50.170577",
+  "summary": {
+    "total_tests": 5,
+    "successful_tests": 5,
+    "failed_tests": 0,
+    "average_duration": 94.35,
+    "average_agent_score": 0.97,
+    "average_critic_score": 0.76,
+    "tests_meeting_min_score": 4,
+    "agent_performance": {
+      "persona": {
+        "average_score": 0.88,
+        "average_duration": 6.55,
+        "success_rate": 1.0
+      },
+      "competitor": {
+        "average_score": 1.0,
+        "average_duration": 14.63,
+        "success_rate": 1.0
+      },
+      "planner": {
+        "average_score": 0.97,
+        "average_duration": 18.88,
+        "success_rate": 1.0
+      },
+      "creative": {
+        "average_score": 1.0,
+        "average_duration": 8.21,
+        "success_rate": 1.0
+      },
+      "performance": {
+        "average_score": 1.0,
+        "average_duration": 23.83,
+        "success_rate": 1.0
+      },
+      "critic": {
+        "average_score": 1.0,
+        "average_duration": 22.25,
+        "success_rate": 1.0
+      }
+    },
+    "category_performance": {
+      "Food & Beverage": {
+        "test_count": 1,
+        "avg_score": 0.98,
+        "avg_critic_score": 0.78
+      },
+      "Technology/SaaS": {
+        "test_count": 1,
+        "avg_score": 0.98,
+        "avg_critic_score": 0.68
+      },
+      "Health & Wellness": {
+        "test_count": 1,
+        "avg_score": 0.98,
+        "avg_critic_score": 0.77
+      },
+      "Retail/Fashion": {
+        "test_count": 1,
+        "avg_score": 0.98,
+        "avg_critic_score": 0.75
+      },
+      "Fitness": {
+        "test_count": 1,
+        "avg_score": 0.95,
+        "avg_critic_score": 0.83
+      }
+    },
+    "duration_stats": {
+      "min": 87.2,
+      "max": 101.5,
+      "total": 471.77
+    }
+  }
+}

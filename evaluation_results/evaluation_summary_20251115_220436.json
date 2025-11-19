@@ -1,0 +1,19 @@
+{
+  "timestamp": "2025-11-15T22:00:12.789032",
+  "summary": {
+    "total_tests": 9,
+    "successful_tests": 0,
+    "failed_tests": 9,
+    "average_duration": 0,
+    "average_agent_score": 0,
+    "average_critic_score": 0,
+    "tests_meeting_min_score": 0,
+    "agent_performance": {},
+    "category_performance": {},
+    "duration_stats": {
+      "min": Infinity,
+      "max": 0,
+      "total": 0
+    }
+  }
+}

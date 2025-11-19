@@ -1,0 +1,56 @@
+{
+  "timestamp": "2025-11-15T22:08:27.053606",
+  "summary": {
+    "total_tests": 1,
+    "successful_tests": 1,
+    "failed_tests": 0,
+    "average_duration": 83.55,
+    "average_agent_score": 0.95,
+    "average_critic_score": 0.77,
+    "tests_meeting_min_score": 1,
+    "agent_performance": {
+      "persona": {
+        "average_score": 0.88,
+        "average_duration": 7.6,
+        "success_rate": 1.0
+      },
+      "competitor": {
+        "average_score": 1.0,
+        "average_duration": 8.98,
+        "success_rate": 1.0
+      },
+      "planner": {
+        "average_score": 0.84,
+        "average_duration": 18.0,
+        "success_rate": 1.0
+      },
+      "creative": {
+        "average_score": 1.0,
+        "average_duration": 7.32,
+        "success_rate": 1.0
+      },
+      "performance": {
+        "average_score": 1.0,
+        "average_duration": 20.89,
+        "success_rate": 1.0
+      },
+      "critic": {
+        "average_score": 1.0,
+        "average_duration": 20.76,
+        "success_rate": 1.0
+      }
+    },
+    "category_performance": {
+      "Food & Beverage": {
+        "test_count": 1,
+        "avg_score": 0.95,
+        "avg_critic_score": 0.77
+      }
+    },
+    "duration_stats": {
+      "min": 83.55,
+      "max": 83.55,
+      "total": 83.55
+    }
+  }
+}
